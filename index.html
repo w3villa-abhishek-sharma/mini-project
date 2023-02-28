@@ -303,10 +303,10 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li>Top Categories</li>
-            <li>Electronics</li>
-            <li>Beauty</li>
-            <li>Fashion</li>
+            <li onclick="ActiveClass(this)" class="active">Top Categories</li>
+            <li onclick="ActiveClass(this)">Electronics</li>
+            <li onclick="ActiveClass(this)">Beauty</li>
+            <li onclick="ActiveClass(this)">Fashion</li>
           </ul>
         </div>
 
@@ -374,10 +374,10 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li>Featured</li>
-            <li>Latest</li>
-            <li>Bestsellers</li>
-            <li>Specials</li>
+            <li onclick="ActiveClass(this)" class="active">Featured</li>
+            <li onclick="ActiveClass(this)">Latest</li>
+            <li onclick="ActiveClass(this)">Bestsellers</li>
+            <li onclick="ActiveClass(this)">Specials</li>
           </ul>
         </div>
 
@@ -711,8 +711,8 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li>LATEST POSTS</li>
-            <li>MOST READ</li>
+            <li onclick="ActiveClass(this)" class="active">LATEST POSTS</li>
+            <li onclick="ActiveClass(this)">MOST READ</li>
           </ul>
         </div>
 
@@ -953,6 +953,17 @@
         </div>
     </footer>
 
+
+    <!-- Custom JavaScript -->
+    <script>
+      function ActiveClass(element)
+      {     
+        element.classList.add("active")
+        //  element.removeClass('active');
+        //  element.addClass('active') ;
+      }
+  </script>
+
     <!-- JQuery JavaScript -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
@@ -1091,5 +1102,7 @@
         },
       });
     </script>
+
+    
   </body>
 </html>

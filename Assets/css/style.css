@@ -414,7 +414,7 @@ header .hambarger i{
     grid-template-columns: 70% 30%;
 }
 .item .carousel-container{
-    width: 90%;
+    width: 96%;
     height: 700px;
     margin: 20px;
 }
@@ -654,11 +654,11 @@ header .hambarger i{
 .why-from-us .category li:last-child{
     border-right: unset;
 }
-.why-from-us .category li:first-child{
+.why-from-us .category li.active{
     background-color: var(--primary-bg-color);
     color: #fff;
 }
-.why-from-us .category li:first-child::after{
+.why-from-us .category li.active::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -787,11 +787,11 @@ header .hambarger i{
 .featured-product .category li:last-child{
     border-right: unset;
 }
-.featured-product .category li:first-child{
+.featured-product .category li.active{
     background-color: var(--primary-bg-color);
     color: #fff;
 }
-.featured-product .category li:first-child::after{
+.featured-product .category li.active::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -1188,11 +1188,11 @@ header .hambarger i{
 .from-our-blog .category li:last-child{
     border-right: unset;
 }
-.from-our-blog .category li:first-child{
+.from-our-blog .category li.active{
     background-color: var(--primary-bg-color);
     color: #fff;
 }
-.from-our-blog .category li:first-child::after{
+.from-our-blog .category li.active::after{
     content: "";
     position: absolute;
     top: 100%;
