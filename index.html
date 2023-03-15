@@ -125,8 +125,8 @@
                   <option value="">Main</option>
                 </select>
               </div>
-              <input type="text" placeholder="Search here....." />
-              <i class="search-icon fa-solid fa-magnifying-glass"></i>
+              <input id="search" type="text" placeholder="Search here....." />
+              <i onclick="handleSearch()" class="search-icon fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="navigations">
               <div class="login link">
@@ -303,57 +303,16 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this)" class="active">Top Categories</li>
-            <li onclick="ActiveClass(this)">Electronics</li>
-            <li onclick="ActiveClass(this)">Beauty</li>
-            <li onclick="ActiveClass(this)">Fashion</li>
+            <li onclick="ActiveClass(this) + categoryRender('category')" class="active">Top Categories</li>
+            <li onclick="ActiveClass(this) + categoryRender('electronics')">Electronics</li>
+            <li onclick="ActiveClass(this) + categoryRender('beauty')">Beauty</li>
+            <li onclick="ActiveClass(this) + categoryRender('fashion')">Fashion</li>
           </ul>
         </div>
 
         <!-- Cards -->
-        <div class="category-cards">
-          <div class="owl-carousel owl-theme category-cards-inner">
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://rukminim1.flixcart.com/image/832/832/kl421e80/ethnic-set/g/p/y/l-k-19a-moti-fasion-original-imagybdbmazfyq5h.jpeg?q=70" alt="" />
-                </div>
-                <div class="content">Fasion</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dw368983d5/images/hi-res/2022-L6-CK2-30781867-1-10-1.jpg?sw=1152&sh=1536" alt="" />
-                </div>
-                <div class="content">Bags</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://media.healthyfood.com/wp-content/uploads/2016/11/Are-you-as-healthy-as-you-think-iStock-1140193165-500x409.jpg" alt="" />
-                </div>
-                <div class="content">Health</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://rukminim1.flixcart.com/image/832/832/ktizdzk0/shoe/y/b/x/7-ws-9310-tying-grey-original-imag6ut3hzm2zyqm.jpeg?q=70" alt="" />
-                </div>
-                <div class="content">Footwear</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://i.gadgets360cdn.com/products/large/motorola-edge-30-pro-657x800-1645713862.jpg" alt="" />
-                </div>
-                <div class="content">Mobile</div>
-              </div>
-            </div>
-          </div>
+        <div id="category" class="category-cards">
+          
         </div>
       </div>
     </section>
@@ -374,64 +333,16 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this)" class="active">Featured</li>
-            <li onclick="ActiveClass(this)">Latest</li>
-            <li onclick="ActiveClass(this)">Bestsellers</li>
-            <li onclick="ActiveClass(this)">Specials</li>
+            <li onclick="ActiveClass(this) + productRender('product')" class="active">Featured</li>
+            <li onclick="ActiveClass(this) + productRender('latest')">Latest</li>
+            <li onclick="ActiveClass(this) + productRender('bestsellers')">Bestsellers</li>
+            <li onclick="ActiveClass(this) + productRender('specials')">Specials</li>
           </ul>
         </div>
 
         <!-- Cards -->
         <div id="featuredProduct2" class="category-cards">
-          <div class="owl-carousel owl-theme category-cards-inner">
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://m.media-amazon.com/images/I/71VR6c3j2bL._SL1500_.jpg" alt="" />
-                  <div class="free">
-                    <span>Free</span>
-                  </div>
-                  <div class="free-2">
-                    <span>Top Branded</span>
-                  </div>
-                  <div class="badges">
-                    <span class="badge badge1">-70%</span>
-                    <span class="badge badge2">hot</span>
-                    <span class="badge badge3">top brand</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="strip">
-                    <a href="#">Ericksson</a>
-                    <span>Model 519</span>
-                  </div>
-                  <div class="card-data">
-                    <h1>Headphones</h1>
-                    <div>$999.00 <strike>$3,299.00</strike></div>
-                    <div class="more">
-                      <div>
-                        <input type="number" value="1" />
-                        <button>ADD TO CART</button>
-                      </div>
-                      <div class="icons">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-sharp fa-solid fa-right-left"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <span
-                      ><i class="fa-light fa-circle-dollar green"></i> Buy
-                      Now</span
-                    >
-                    <span
-                      ><i class="fa-solid fa-question red"></i> Question</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           <div class="see-all-btn">
             <button>
               SEE ALL BUTTON <i class="fa-solid fa-arrow-right"></i>
@@ -455,131 +366,8 @@
           </p>
         </div>
 
-        <div class="inner-container">
-          <div class="left-card">
-            <h1>Fashion</h1>
-            <div class="card">
-              <div class="img">
-                <img src="https://i.pinimg.com/originals/97/44/ef/9744ef8769817be7143050bcf92cdd82.jpg" alt="">
-              </div>
-              <div class="content">
-                <div>Accesories</div>
-                <div>Dresses</div>
-                <div>Pants</div>
-                <div>T-Shirts</div>
-                <a href="#">See all in Fashion</a>
-              </div>
-            </div>
-          </div>
-          <div class="right-card-container">
-            <h1>New in Fashion</h1>
-            <!-- Cards -->
-        <div class="category-cards">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSl4LdNnauQ7lugFOJCJIn1XeNYXdX0hRaxvfLpB138hQh77sI7Tg5k6A3DimAguI1anI&usqp=CAU" alt="" />
-                  <div class="free">
-                    <span>Free</span>
-                  </div>
-                  <div class="free-2">
-                    <span>Top Branded</span>
-                  </div>
-                  <div class="badges">
-                    <span class="badge badge1">-70%</span>
-                    <span class="badge badge2">hot</span>
-                    <span class="badge badge3">top brand</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="name">Bodycorn Dress</div>
-                  <span>$399.00</span>
-                </div>
-                <div class="card-footer">
-                  <button>Add to Card</button>
-                  <span>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://media.vetrinalive.com/wp-content/uploads/2022/01/10123410/eCommerce-Product-Photography.jpg" alt="" />
-                  <div class="free">
-                    <span>Free</span>
-                  </div>
-                  <div class="badges">
-                    <span class="badge badge1">-70%</span>
-                    <span class="badge badge2">hot</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="name">Bodycorn Dress</div>
-                  <span>$399.00</span>
-                </div>
-                <div class="card-footer">
-                  <button>Add to Card</button>
-                  <span>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU" alt="" />
-                  <div class="free">
-                    <span>Free</span>
-                  </div>
-                  <div class="badges">
-                    <span class="badge badge1">-70%</span>
-                    <span class="badge badge2">hot</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="name">Bodycorn Dress</div>
-                  <span>$399.00</span>
-                </div>
-                <div class="card-footer">
-                  <button>Add to Card</button>
-                  <span>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU" alt="" />
-                  <div class="free">
-                    <span>Free</span>
-                  </div>
-                  <div class="badges">
-                    <span class="badge badge1">-70%</span>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="name">Bodycorn Dress</div>
-                  <span>$399.00</span>
-                </div>
-                <div class="card-footer">
-                  <button>Add to Card</button>
-                  <span>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="fashion" class="inner-container">
+          
         </div>
           </div>
         </div>
@@ -711,39 +499,14 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this)" class="active">LATEST POSTS</li>
-            <li onclick="ActiveClass(this)">MOST READ</li>
+            <li onclick="ActiveClass(this) + blogRender('blog')" class="active">LATEST POSTS</li>
+            <li onclick="ActiveClass(this) + blogRender('most_viewed')">MOST READ</li>
           </ul>
         </div>
 
         <!-- Cards -->
-        <div class="category-cards from-our-blog-cards">
-          <div class="owl-carousel owl-theme category-cards-inner">
-            <div class="item">
-              <div class="category-card">
-                <div class="img">
-                  <img src="https://w0.peakpx.com/wallpaper/740/728/HD-wallpaper-cute-girl-art-girls-model-cute-thumbnail.jpg" alt="" />
-                  <div class="date">
-                    <div class="day">12</div>
-                    <div class="month">Jan</div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="strip">
-                    <span><i class="fa-solid fa-user"></i> admin</span>
-                    <span><i class="fa-solid fa-message-dots"></i> 38</span>
-                    <span><i class="fa-solid fa-eye"></i> 19340</span>
-                  </div>
-                  <div class="card-data">
-                    <h1>Journal blog is here</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, maiores! Cupiditate natus qui commodi quidem tenetur, impedit illo saepe ratione ipsum facilis at cum repellendus amet delectus fuga eveniet.</p>
-                    <span><a href="#">Read more <i class="fa-sharp fa-solid fa-arrow-right"></i></a></span>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="blogs" class="category-cards from-our-blog-cards">
+          
         </div>
         </div>
       </div>
@@ -755,53 +518,8 @@
       <div class="container">
         <div class="main-container">
           <h1>What are people saying about us</h1>
-          <div class="people-saying-cards">
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="card">
-                  <div class="img">
-                    <img src="https://suprents.com/wp-content/uploads/2021/03/curly-quotation-mark-72.png" alt="">
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid officia nemo error quidem neque! Iusto ab quibusdam atque ad officiis laboriosam maxime molestias deleniti esse eligendi ducimus tempora itaque commodi, saepe impedit ipsa nisi fugiat maiores illum dignissimos modi nesciunt quos ex. Hic!</p>
-                    <span>- charlibaltimore</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <div class="img">
-                    <img src="https://suprents.com/wp-content/uploads/2021/03/curly-quotation-mark-72.png" alt="">
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid officia nemo error quidem neque! Iusto ab quibusdam atque ad officiis laboriosam maxime molestias deleniti esse eligendi ducimus tempora itaque commodi, saepe impedit ipsa nisi fugiat maiores illum dignissimos modi nesciunt quos ex. Hic!</p>
-                    <span>- charlibaltimore</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <div class="img">
-                    <img src="https://suprents.com/wp-content/uploads/2021/03/curly-quotation-mark-72.png" alt="">
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid officia nemo error quidem neque! Iusto ab quibusdam atque ad officiis laboriosam maxime molestias deleniti esse eligendi ducimus tempora itaque commodi, saepe impedit ipsa nisi fugiat maiores illum dignissimos modi nesciunt quos ex. Hic!</p>
-                    <span>- charlibaltimore</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <div class="img">
-                    <img src="https://suprents.com/wp-content/uploads/2021/03/curly-quotation-mark-72.png" alt="">
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid officia nemo error quidem neque! Iusto ab quibusdam atque ad officiis laboriosam maxime molestias deleniti esse eligendi ducimus tempora itaque commodi, saepe impedit ipsa nisi fugiat maiores illum dignissimos modi nesciunt quos ex. Hic!</p>
-                    <span>- charlibaltimore</span>
-                  </div>
-                </div>
-              </div>
-          </div>
+          <div id="comments" class="people-saying-cards">
+            
           </div>
         </div>
       </div>
@@ -813,63 +531,8 @@
       <div class="container">
         <div class="most-viewed-section">
           <h1>MOST VIEWED</h1>
-          <div class="cards">
-            <div class="card">
-              <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU" alt="">
-              </div>
-              <div class="content">
-                <h2>Oversized Sunglasses</h2>
-                <span>$397.00</span>
-                <div>
-                  <i class="fa-solid fa-cart-shopping-fast"></i>
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU" alt="">
-              </div>
-              <div class="content">
-                <h2>Oversized Sunglasses</h2>
-                <span>$397.00</span>
-                <div>
-                  <i class="fa-solid fa-cart-shopping-fast"></i>
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU" alt="">
-              </div>
-              <div class="content">
-                <h2>Oversized Sunglasses</h2>
-                <span>$397.00</span>
-                <div>
-                  <i class="fa-solid fa-cart-shopping-fast"></i>
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU" alt="">
-              </div>
-              <div class="content">
-                <h2>Oversized Sunglasses</h2>
-                <span>$397.00</span>
-                <div>
-                  <i class="fa-solid fa-cart-shopping-fast"></i>
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </div>
-              </div>
-            </div>
+          <div id="most-viewed-card" class="cards">
+            
           </div>
         </div>
       </div>
@@ -984,6 +647,12 @@
     ></script>
 
     <script src="./Assets/javascript/product.js"></script>
+    <script src="./Assets/javascript/script.js"></script>
+    <script src="./Assets/javascript/blog.js"></script>
+    <script src="./Assets/javascript/fashion.js"></script>
+    <script src="./Assets/javascript/mostViewed.js"></script>
+    <script src="./Assets/javascript/peopleComment.js"></script>
+    <script src="./Assets/javascript/category.js"></script>
 
     <!-- Custom OWl Jquery -->
     <script>
@@ -1025,87 +694,6 @@
         },
       });
 
-
-       // This Code for from-our-blog cards
-       $(".from-our-blog-cards .owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-      });
-
-      // This Code for category 2 cards
-      $(".right-card-container .owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-      });
-      // This Code for category cards
-      $(".owl-carousel.category-cards-inner").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-          1500: {
-            items: 4,
-          },
-        },
-      });
-
-
-     
-
-      // This Code for people saying cards
-      $(".people-saying-cards .owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        autoplay: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-          },
-        },
-      });
     </script>
 
     

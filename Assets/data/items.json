@@ -1,0 +1,464 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Headphone",
+      "price": 99,
+      "img": "https://m.media-amazon.com/images/I/71VR6c3j2bL._SL1500_.jpg",
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "free": true,
+      "top_branded": true,
+      "off": 70,
+      "hot": true
+    },
+    {
+      "id": 2,
+      "name": "iPad",
+      "price": 999,
+      "img": "https://wi.wallpapertip.com/wsimgs/153-1539957_ipad-pro-tastiera-ipad-pro-2020.jpg",
+      "posted": "iPhone",
+      "model": "Model 519",
+      "free": true,
+      "top_branded": true,
+      "off": 10,
+      "hot": true
+    },
+    {
+      "id": 3,
+      "name": "Smart Watch",
+      "price": 99,
+      "img": "https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70",
+      "posted": "Ekkrisson",
+      "model": "Model 400",
+      "free": false,
+      "top_branded": false,
+      "off": 20,
+      "hot": false
+    },
+    {
+      "id": 4,
+      "name": "Ear Phone",
+      "price": 49,
+      "img": "https://ae01.alicdn.com/kf/S24c9adecba0c4499ab5d4b1eae89c9d0g/Fone-Bluetooth-Earphones-Wireless-Headphones-Magnetic-Sport-Neckband-Neck-hanging-TWS-Earbuds-Wireless-Blutooth-Headset-with.jpg_640x640.jpg",
+      "posted": "vision",
+      "model": "Model 300",
+      "free": false,
+      "top_branded": false,
+      "off": 0,
+      "hot": true
+    },
+    {
+      "id": 5,
+      "name": "Mobile",
+      "price": 499,
+      "img": "https://i.etsystatic.com/28476617/r/il/305a0e/2982012460/il_fullxfull.2982012460_swob.jpg",
+      "posted": "Svison",
+      "model": "Model 202",
+      "off": 40,
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    }
+  ],
+  "latest": [
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    }
+  ],
+  "bestsellers": [
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    }
+  ],
+  "specials": [
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false
+    }
+  ],
+  "most_viewed": [
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
+      "name": "Oversized Sunglasses",
+      "price": 397
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
+      "name": "Sunglasses",
+      "price": 199
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
+      "name": "Oversized Sunglasses",
+      "price": 200
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
+      "name": "Oversized",
+      "price": 99
+    }
+  ],
+  "fashion": {
+    "img": "https://i.pinimg.com/originals/97/44/ef/9744ef8769817be7143050bcf92cdd82.jpg",
+    "data": ["Accesories", "Dresses", "Pants", "T-Shirts"]
+  },
+  "new_fashion": [
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSl4LdNnauQ7lugFOJCJIn1XeNYXdX0hRaxvfLpB138hQh77sI7Tg5k6A3DimAguI1anI&usqp=CAU",
+      "name": "Bodycorn Dress",
+      "price": 399,
+      "free": true,
+      "top_branded": true,
+      "off": 70,
+      "hot": true
+    },
+    {
+      "img": "https://media.vetrinalive.com/wp-content/uploads/2022/01/10123410/eCommerce-Product-Photography.jpg",
+      "name": "Bodycorn Dress",
+      "price": 299,
+      "free": true,
+      "top_branded": false,
+      "off": 70,
+      "hot": true
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
+      "name": "Bodycorn Dress",
+      "price": 199,
+      "free": true,
+      "top_branded": false,
+      "off": 50,
+      "hot": true
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
+      "name": "Bodycorn Dress",
+      "price": 399,
+      "free": true,
+      "top_branded": false,
+      "off": 40,
+      "hot": false
+    }
+  ]
+}
