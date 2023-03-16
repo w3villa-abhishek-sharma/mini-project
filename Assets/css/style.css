@@ -614,12 +614,13 @@ header .hambarger i {
     color: blue;
     font-size: 1.4rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .hero .side-container .img .data p {
     width: 80%;
     font-size: 1.8rem;
+    font-weight: 500;
 }
 
 @media screen and (max-width:1000px) {
