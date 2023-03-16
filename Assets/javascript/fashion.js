@@ -88,7 +88,7 @@ const fashionRender = async () => {
       600: {
         items: 2,
       },
-      1000: {
+      1100: {
         items: 3,
       },
     },

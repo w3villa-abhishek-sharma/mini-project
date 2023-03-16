@@ -37,11 +37,8 @@ const categoryRender = async (type="category") => {
       600: {
         items: 2,
       },
-      1000: {
-        items: 3,
-      },
-      1500: {
-        items: 4,
+      1100: {
+        items: 5,
       },
     },
   });
