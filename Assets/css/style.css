@@ -674,7 +674,6 @@ header .hambarger i {
 
 @media screen and (max-width:415px) {
     .item .carousel-container {
-        width: 89%;
         height: 380px;
     }
 }
