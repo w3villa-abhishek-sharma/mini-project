@@ -1147,6 +1147,114 @@ header .hambarger i {
 }
 
 
+
+/* 
++++++++++++ Search item - Section +++++++++
+*/
+.items-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+/* Search Item Card */
+
+.items-container .category-card {
+    position: relative;
+    margin: 20px 0;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 385px;
+    margin: 10px;
+}
+
+.items-container .category-card .img {
+    width: 100%;
+    height: 300px;
+}
+
+.items-container .category-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.items-container .category-card .card-body .strip {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: var(--secondry-bg-color);
+    color: var(--secondry-text-color);
+}
+
+.items-container .category-card .card-body .strip a {
+    color: var(--secondry-text-color);
+}
+
+.items-container .category-card .card-data {
+    background-color: #fff;
+    padding: 30px 10px;
+}
+
+.items-container .category-card .card-data h1 {
+    margin: 10px auto;
+    font-size: 1.5rem;
+}
+
+.items-container .category-card .card-data strike {
+    color: var(--secondry-text-color);
+    font-size: 1rem;
+}
+
+.items-container .category-card .card-data .more {
+    display: grid;
+    grid-template-columns: 77% 23%;
+    margin: 20px auto;
+}
+
+.items-container .category-card .card-data .more .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-container .category-card .card-data .more input {
+    width: 55px;
+    padding: 8px 4px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+.items-container .category-card .card-data .more input:focus {
+    outline: none;
+}
+
+.items-container .category-card .card-data .more button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: var(--primary-bg-color);
+    border: unset;
+    color: #fff;
+}
+
+.items-container .category-card .card-data .more i {
+    margin: 0 5px;
+    color: var(--secondry-text-color);
+    font-size: 1.4rem;
+}
+
+.items-container .category-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: var(--secondry-bg-color);
+    border-radius: 0 0 10px 10px;
+    color: var(--secondry-text-color);
+}
+
+
 /* 
 +++++++++++ featured-product-2 - Section +++++++++
 */

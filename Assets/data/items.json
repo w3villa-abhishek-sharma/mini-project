@@ -10,7 +10,8 @@
       "free": true,
       "top_branded": true,
       "off": 70,
-      "hot": true
+      "hot": true,
+      "type": "featured"
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "free": true,
       "top_branded": true,
       "off": 10,
-      "hot": true
+      "hot": true,
+      "type": "featured"
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "free": false,
       "top_branded": false,
       "off": 20,
-      "hot": false
+      "hot": false,
+      "type": "featured"
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "free": false,
       "top_branded": false,
       "off": 0,
-      "hot": true
+      "hot": true,
+      "type": "featured"
     },
     {
       "id": 5,
@@ -58,22 +62,11 @@
       "off": 40,
       "free": false,
       "top_branded": true,
-      "hot": false
-    }
-  ],
-  "latest": [
-    {
-      "name": "Apple",
-      "model": "206",
-      "posted": "Ice Skates",
-      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
-      "price": "200",
-      "off": "150",
-      "free": false,
-      "top_branded": true,
-      "hot": false
+      "hot": false,
+      "type": "featured"
     },
     {
+      "id":6,
       "name": "Apple",
       "model": "206",
       "posted": "Ice Skates",
@@ -82,7 +75,8 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -93,7 +87,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":7,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -104,7 +100,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":8,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -115,7 +113,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":9,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -126,7 +126,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":10,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -137,7 +139,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":11,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -148,7 +152,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":12,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -159,20 +165,22 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
-    }
-  ],
-  "bestsellers": [
+      "hot": false,
+      "id":13,
+      "type": "latest"
+    },
     {
       "name": "Apple",
       "model": "206",
-      "posted": "Wireless Phone Chargers",
-      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
+      "posted": "Ice Skates",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg",
       "price": "200",
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":14,
+      "type": "latest"
     },
     {
       "name": "Apple",
@@ -183,7 +191,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":15,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -194,7 +204,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":16,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -205,7 +217,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":17,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -216,7 +230,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":18,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -227,7 +243,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":19,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -238,7 +256,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":20,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -249,7 +269,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":21,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -260,7 +282,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":22,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -271,7 +295,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":23,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -282,53 +308,22 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
-    }
-  ],
-  "specials": [
-    {
-      "name": "Apple",
-      "model": "206",
-      "posted": "Laptop Accessories",
-      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
-      "price": "200",
-      "off": "150",
-      "free": false,
-      "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":24,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
       "model": "206",
-      "posted": "Laptop Accessories",
-      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "posted": "Wireless Phone Chargers",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg",
       "price": "200",
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
-    },
-    {
-      "name": "Apple",
-      "model": "206",
-      "posted": "Laptop Accessories",
-      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
-      "price": "200",
-      "off": "150",
-      "free": false,
-      "top_branded": true,
-      "hot": false
-    },
-    {
-      "name": "Apple",
-      "model": "206",
-      "posted": "Laptop Accessories",
-      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
-      "price": "200",
-      "off": "150",
-      "free": false,
-      "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":25,
+      "type": "bestsellers"
     },
     {
       "name": "Apple",
@@ -339,7 +334,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":26,
+      "type": "specials"
     },
     {
       "name": "Apple",
@@ -350,7 +347,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":27,
+      "type": "specials"
     },
     {
       "name": "Apple",
@@ -361,7 +360,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":28,
+      "type": "specials"
     },
     {
       "name": "Apple",
@@ -372,7 +373,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":29,
+      "type": "specials"
     },
     {
       "name": "Apple",
@@ -383,7 +386,9 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
+      "hot": false,
+      "id":30,
+      "type": "specials"
     },
     {
       "name": "Apple",
@@ -394,71 +399,169 @@
       "off": "150",
       "free": false,
       "top_branded": true,
-      "hot": false
-    }
-  ],
-  "most_viewed": [
+      "hot": false,
+      "id":31,
+      "type": "specials"
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false,
+      "id":32,
+      "type": "specials"
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false,
+      "id":33,
+      "type": "specials"
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false,
+      "id":34,
+      "type": "specials"
+    },
+    {
+      "name": "Apple",
+      "model": "206",
+      "posted": "Laptop Accessories",
+      "img": "https://www.cloudways.com/blog/wp-content/uploads/Laptop-Accessories.jpg",
+      "price": "200",
+      "off": "150",
+      "free": false,
+      "top_branded": true,
+      "hot": false,
+      "id":35,
+      "type": "specials"
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSl4LdNnauQ7lugFOJCJIn1XeNYXdX0hRaxvfLpB138hQh77sI7Tg5k6A3DimAguI1anI&usqp=CAU",
+      "name": "Bodycorn Dress",
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 399,
+      "free": true,
+      "top_branded": true,
+      "off": 70,
+      "hot": true,
+      "id":36,
+      "type": "new_fashion"
+    },
+    {
+      "img": "https://media.vetrinalive.com/wp-content/uploads/2022/01/10123410/eCommerce-Product-Photography.jpg",
+      "name": "Bodycorn Dress",
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 299,
+      "free": true,
+      "top_branded": false,
+      "off": 70,
+      "hot": true,
+      "id":37,
+      "type": "new_fashion"
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
+      "name": "Bodycorn Dress",
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 199,
+      "free": true,
+      "top_branded": false,
+      "off": 50,
+      "hot": true,
+      "id":38,
+      "type": "new_fashion"
+    },
+    {
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
+      "name": "Bodycorn Dress",
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 399,
+      "free": true,
+      "top_branded": false,
+      "off": 40,
+      "hot": false,
+      "id":39,
+      "type": "new_fashion"
+    },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
       "name": "Oversized Sunglasses",
-      "price": 397
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 397,
+      "free": true,
+      "top_branded": true,
+      "off": 40,
+      "hot": false,
+      "id":39,
+      "type": "most_viewed"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
       "name": "Sunglasses",
-      "price": 199
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 199,
+      "free": false,
+      "top_branded": false,
+      "off": 40,
+      "hot": false,
+      "id":40,
+      "type": "most_viewed"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
       "name": "Oversized Sunglasses",
-      "price": 200
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 200,
+      "free": true,
+      "top_branded": false,
+      "off": 40,
+      "hot": true,
+      "id":41,
+      "type": "most_viewed"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
       "name": "Oversized",
-      "price": 99
+      "posted": "Ekkrisson",
+      "model": "Model 519",
+      "price": 99,
+      "free": false,
+      "top_branded": false,
+      "off": 40,
+      "hot": true,
+      "id":42,
+      "type": "most_viewed"
     }
   ],
   "fashion": {
     "img": "https://i.pinimg.com/originals/97/44/ef/9744ef8769817be7143050bcf92cdd82.jpg",
     "data": ["Accesories", "Dresses", "Pants", "T-Shirts"]
-  },
-  "new_fashion": [
-    {
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSl4LdNnauQ7lugFOJCJIn1XeNYXdX0hRaxvfLpB138hQh77sI7Tg5k6A3DimAguI1anI&usqp=CAU",
-      "name": "Bodycorn Dress",
-      "price": 399,
-      "free": true,
-      "top_branded": true,
-      "off": 70,
-      "hot": true
-    },
-    {
-      "img": "https://media.vetrinalive.com/wp-content/uploads/2022/01/10123410/eCommerce-Product-Photography.jpg",
-      "name": "Bodycorn Dress",
-      "price": 299,
-      "free": true,
-      "top_branded": false,
-      "off": 70,
-      "hot": true
-    },
-    {
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
-      "name": "Bodycorn Dress",
-      "price": 199,
-      "free": true,
-      "top_branded": false,
-      "off": 50,
-      "hot": true
-    },
-    {
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
-      "name": "Bodycorn Dress",
-      "price": 399,
-      "free": true,
-      "top_branded": false,
-      "off": 40,
-      "hot": false
-    }
-  ]
+  }
 }

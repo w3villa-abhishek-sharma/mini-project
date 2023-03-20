@@ -1,6 +1,9 @@
 // Fashion fetch from json file and render on web page
 const fashionRender = async () => {
   const data = await fetchData("items.json");
+  const resData = data.product.filter(
+    (element) => element.type == "new_fashion"
+  );
   const fashion = document.getElementById("fashion");
   let html = `<div class="left-card">
     <h1>Fashion</h1>
@@ -22,7 +25,7 @@ const fashionRender = async () => {
   <!-- Cards -->
 <div class="category-cards">
 <div class="owl-carousel owl-theme">`;
-  data.new_fashion.forEach((element) => {
+  resData.forEach((element) => {
     html += `
        <div class="item">
               <div class="category-card">

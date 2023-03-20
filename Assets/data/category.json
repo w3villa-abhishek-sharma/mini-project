@@ -3,105 +3,140 @@
     {
       "name": "Fashion",
       "img": "https://rukminim1.flixcart.com/image/832/832/kl421e80/ethnic-set/g/p/y/l-k-19a-moti-fasion-original-imagybdbmazfyq5h.jpeg?q=70",
-      "id": 1
+      "id": 1,
+      "type":"top_category"
     },
     {
       "name": "Bags",
       "img": "https://img2.exportersindia.com/product_images/bc-full/2019/10/6630584/traveling-backpack-bags-1570180768-5086249.jpeg",
-      "id": 2
+      "id": 2,
+      "type":"top_category"
     },
     {
       "name": "Health",
       "img": "https://media.healthyfood.com/wp-content/uploads/2016/11/Are-you-as-healthy-as-you-think-iStock-1140193165-500x409.jpg",
-      "id": 3
+      "id": 3,
+      "type":"top_category"
     },
     {
       "name": "Footwear",
       "img": "https://rukminim1.flixcart.com/image/832/832/ktizdzk0/shoe/y/b/x/7-ws-9310-tying-grey-original-imag6ut3hzm2zyqm.jpeg?q=70",
-      "id": 4
+      "id": 4,
+      "type":"top_category"
     },
     {
       "name": "Mobile",
       "img": "https://i.gadgets360cdn.com/products/large/motorola-edge-30-pro-657x800-1645713862.jpg",
-      "id": 1
-    }
-  ],
-  "electronics": [
+      "id": 5,
+      "type":"top_category"
+    },
     {
       "name": "mobiles",
-      "img": "https://images.unsplash.com/photo-1596558450268-9c27524ba856?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=100"
+      "img": "https://images.unsplash.com/photo-1596558450268-9c27524ba856?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=100",
+      "id":6,
+      "type":"electronics"
     },
     {
       "name": "laptops",
-      "img": "https://images.unsplash.com/photo-1504707748692-419802cf939d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=100"
+      "img": "https://images.unsplash.com/photo-1504707748692-419802cf939d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1147&q=100",
+      "id":7,
+      "type":"electronics"
     },
     {
       "name": "headphones",
-      "img": "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100"
+      "img": "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100",
+      "id":8,
+      "type":"electronics"
     },
     {
       "name": "speakers",
-      "img": "https://images.unsplash.com/photo-1585605109191-03cc36051fcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100"
+      "img": "https://images.unsplash.com/photo-1585605109191-03cc36051fcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100",
+      "id":9,
+      "type":"electronics"
     },
     {
       "name": "cameras",
-      "img": "https://images.unsplash.com/photo-1491796014055-e6835cdcd4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=100"
+      "img": "https://images.unsplash.com/photo-1491796014055-e6835cdcd4c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=100",
+      "id":10,
+      "type":"electronics"
     },
     {
       "name": "accessories",
-      "img": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=100"
-    }
-  ],
-  "beauty": [
+      "img": "https://images.unsplash.com/photo-1624823183493-ed5832f48f18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=100",
+      "id":11,
+      "type":"electronics"
+    },
     {
       "name": "makeup",
-      "img": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100"
+      "img": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100",
+      "id":12,
+      "type":"beauty"
     },
     {
       "name": "skincare",
-      "img": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100"
+      "img": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100",
+      "id":13,
+      "type":"beauty"
     },
     {
       "name": "haircare",
-      "img": "https://images.unsplash.com/photo-1624939461078-66a124b3539c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100"
+      "img": "https://images.unsplash.com/photo-1624939461078-66a124b3539c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100",
+      "id":14,
+      "type":"beauty"
     },
     {
       "name": "fragrances",
-      "img": "https://images.unsplash.com/photo-1587304946976-cbbbafce2133?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+      "img": "https://images.unsplash.com/photo-1587304946976-cbbbafce2133?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+      "id":15,
+      "type":"beauty"
     },
     {
       "name": "tools",
-      "img": "https://images.unsplash.com/photo-1600228397442-46ea628b4bdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=100"
+      "img": "https://images.unsplash.com/photo-1600228397442-46ea628b4bdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=100",
+      "id":16,
+      "type":"beauty"
     },
     {
       "name": "accessories",
-      "img": "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=100"
-    }
-  ],
-  "fashion": [
+      "img": "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=100",
+      "id":17,
+      "type":"beauty"
+    },
     {
       "name": "Jeans",
-      "img": "https://images.unsplash.com/photo-1582552938357-32b906df40cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100"
+      "img": "https://images.unsplash.com/photo-1582552938357-32b906df40cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=100",
+      "id":18,
+      "type":"fashion"
     },
     {
       "name": "T-shirts",
-      "img": "https://images.unsplash.com/photo-1616006897093-5e4635c0de35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100"
+      "img": "https://images.unsplash.com/photo-1616006897093-5e4635c0de35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100",
+      "id":19,
+      "type":"fashion"
     },
     {
       "name": "Shirts",
-      "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=100"
+      "img": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=100",
+      "id":20,
+      "type":"fashion"
     },
     {
       "name": "Sweaters",
-      "img": "https://images.unsplash.com/photo-1579954568250-8b7abc7743e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=100"
+      "img": "https://images.unsplash.com/photo-1579954568250-8b7abc7743e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=100",
+      "id":21,
+      "type":"fashion"
     },
     {
       "name": "Jackets",
-      "img": "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100"
+      "img": "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=100",
+      "id":22,
+      "type":"fashion"
     },
     {
       "name": "Suits",
-      "img": "https://images.unsplash.com/photo-1593030103066-0093718efeb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=100"
+      "img": "https://images.unsplash.com/photo-1593030103066-0093718efeb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=100",
+      "id":23,
+      "type":"fashion"
     }
   ]
 }

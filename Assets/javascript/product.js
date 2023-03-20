@@ -7,19 +7,15 @@ const fetchData = async (fileName) => {
 
 
 // Product fetch from json file and render on web page
-const productRender = async (type="product") => {
+const productRender = async (type="featured") => {
   const response = await fetchData("items.json");
   const featuredProduct2 = document.getElementById("featuredProduct2");
   let data = response.product;
-  if(type == "specials"){
-    data = response.specials;
-  }else if(type == "bestsellers"){
-    data = response.bestsellers;
-  }else if(type == "latest"){
-    data = response.latest;
-  }
+  const resData = data.filter(
+    (element) => element.type == type
+  );
   let html = `<div class="owl-carousel owl-theme category-cards-inner">`;
-  data.forEach((element) => {
+  resData.forEach((element) => {
     html += `
        <div class="item">
               <div class="category-card">

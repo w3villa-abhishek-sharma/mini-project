@@ -1,17 +1,15 @@
 // Category fetch from json file and render on web page
-const categoryRender = async (type="category") => {
+const categoryRender = async (type="top_category") => {
   const response = await fetchData("category.json");
   let data = response.category;
-  if(type=="electronics"){
-    data = response.electronics 
-  }else if(type == "beauty"){
-    data = response.beauty
-  }else if(type == "fashion"){
-    data = response.fashion
-  }
+  const resData = data.filter(element=>{
+    if(type==element.type){
+      return element
+    }
+  })
   const category = document.getElementById("category");
   let html = `<div class="owl-carousel owl-theme category-cards-inner">`;
-  data.forEach((element) => {
+  resData.forEach((element) => {
     html += `
        <div class="item">
               <div class="category-card">

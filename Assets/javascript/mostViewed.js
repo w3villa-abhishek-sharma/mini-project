@@ -3,7 +3,8 @@ const mostViewed = async () => {
   const data = await fetchData("items.json");
   const most = document.getElementById("most-viewed-card");
   let html = ``;
-  data.most_viewed.forEach((element) => {
+  const resData = data.product.filter(element=>element.type == 'most_viewed');
+  resData.forEach((element) => {
     html += `
        <div class="card">
               <div class="img">

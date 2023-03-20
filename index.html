@@ -70,7 +70,7 @@
         <div class="top-strip">
           <!-- Show in Mobile view -->
           <div class="phone-login">
-            <span><i class="fa-regular fa-user"></i> Login</span>
+            <span onclick="window.location='./login.html'"><i class="fa-regular fa-user"></i> Login</span>
             <span><i class="fa-regular fa-pen-to-square"></i> Register</span>
           </div>
 
@@ -125,11 +125,11 @@
                   <option value="">Main</option>
                 </select>
               </div>
-              <input id="search" type="text" placeholder="Search here....." />
+              <input onkeypress="handleSearch()" onchange="handleSearch()" id="search" type="text" placeholder="Search here....." />
               <i onclick="handleSearch()" class="search-icon fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="navigations">
-              <div class="login link">
+              <div onclick="window.location='./login.html'" class="login link">
                 <i class="fa-solid fa-user"></i>
                 <span>Login</span>
               </div>
@@ -184,7 +184,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="container main">
         <div class="hero-section">
           <div class="owl-carousel owl-theme main-screen">
@@ -253,7 +253,7 @@
     </section>
 
     <!-- 4 Stats Section -->
-    <section class="stats">
+    <section id="stats" class="stats">
       <div class="container">
         <div class="stats-section">
           <div class="two-stats">
@@ -293,7 +293,7 @@
     </section>
 
     <!-- Why buy from us - Section -->
-    <section class="why-from-us">
+    <section id="why-from-us" class="why-from-us">
       <div class="container">
         <div class="main">
           <h1>Why buy from us?</h1>
@@ -309,7 +309,7 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this) + categoryRender('category')" class="active">Top Categories</li>
+            <li onclick="ActiveClass(this) + categoryRender('top_category')" class="active">Top Categories</li>
             <li onclick="ActiveClass(this) + categoryRender('electronics')">Electronics</li>
             <li onclick="ActiveClass(this) + categoryRender('beauty')">Beauty</li>
             <li onclick="ActiveClass(this) + categoryRender('fashion')">Fashion</li>
@@ -324,7 +324,7 @@
     </section>
 
     <!-- Featured Products - Section -->
-    <section class="featured-product">
+    <section id="featured-product" class="featured-product">
       <div class="container">
         <div class="main">
           <h1>Featured Product</h1>
@@ -340,7 +340,7 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this) + productRender('product')" class="active">Featured</li>
+            <li onclick="ActiveClass(this) + productRender('featured')" class="active">Featured</li>
             <li onclick="ActiveClass(this) + productRender('latest')">Latest</li>
             <li onclick="ActiveClass(this) + productRender('bestsellers')">Bestsellers</li>
             <li onclick="ActiveClass(this) + productRender('specials')">Specials</li>
@@ -361,7 +361,7 @@
 
 
     <!-- Featured Products - Section -->
-    <section class="featured-product-2">
+    <section id="featured-product-2" class="featured-product-2">
       <div class="container">
         <div class="main">
           <h1>Featured Product</h1>
@@ -384,7 +384,7 @@
 
 
     <!-- Shop By Brand -->
-    <section class="shop-by-brand">
+    <section id="shop-by-brand" class="shop-by-brand">
       <div class="container">
         <div class="main">
           <h1>Shop By Brand</h1>
@@ -453,7 +453,7 @@
 
 
     <!-- Improved gallery module -->
-    <section class="improved-gallery-module">
+    <section id="improved-gallery-module" class="improved-gallery-module">
       <div class="container">
         <div class="main-section">
           <h1>Improved Gallery Module</h1>
@@ -496,7 +496,7 @@
 
 
     <!-- From Our Blog - Section -->
-    <div class="from-our-blog">
+    <div id="from-our-blog" class="from-our-blog">
       <div class="container">
         <div class="card-container">
           <h1>From Our Blog</h1>
@@ -524,7 +524,7 @@
 
 
     <!-- What are people saying - section -->
-    <section class="what-are-people-saying">
+    <section id="what-are-people-saying" class="what-are-people-saying">
       <div class="container">
         <div class="main-container">
           <h1>What are people saying about us</h1>
@@ -537,7 +537,7 @@
 
 
     <!-- Most Viewed - Section -->
-    <section class="most-viewed">
+    <section id="most-viewed" class="most-viewed">
       <div class="container">
         <div class="most-viewed-section">
           <h1>MOST VIEWED</h1>
@@ -545,6 +545,16 @@
           <div id="most-viewed-card" class="cards">
             
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Search Item Section -->
+    <section class="search-item-section">
+      <div class="container">
+        <div id="search-items" class="items-container">
+
         </div>
       </div>
     </section>
@@ -630,11 +640,11 @@
 
     <!-- Custom JavaScript -->
     <script>
-      function ActiveClass(element)
-      {     
-        element.classList.add("active")
-        //  element.removeClass('active');
-        //  element.addClass('active') ;
+      function ActiveClass(element){     
+        for (const child of element.parentNode.children) {
+          child.classList.remove("active");
+        }     
+        element.classList.add("active");
       }
   </script>
 
