@@ -87,3 +87,9 @@ async function handleSearch() {
   document.getElementById("stats").style.display = "none";
   document.getElementById("hero").style.display = "none";
 }
+
+
+// Handle Add to Cart
+async function handleAddToCart(id){
+    const cartData = localStorage.getItem("cart");
+}
