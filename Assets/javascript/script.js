@@ -91,5 +91,8 @@ async function handleSearch() {
 
 // Handle Add to Cart
 async function handleAddToCart(id){
-    const cartData = localStorage.getItem("cart");
+    const cartData = JSON.parse(localStorage.getItem("cart"));
+    if(cartData.length){
+        
+    }
 }
