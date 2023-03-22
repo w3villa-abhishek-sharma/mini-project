@@ -66,9 +66,9 @@ const fashionRender = async () => {
                   <span>$${element.price}.00</span>
                 </div>
                 <div class="card-footer">
-                  <button>Add to Card</button>
+                  <button id="${element.id}" onclick="handleAddToCart(this,'cart')">Add to Card</button>
                   <span>
-                    <i class="fa-regular fa-heart"></i>
+                    <i id="${element.id}" onclick="handleAddToCart(this,'wishlist')" class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                   </span>
                 </div>

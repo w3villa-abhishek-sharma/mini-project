@@ -63,14 +63,16 @@
     <!-- Link Custom CSS -->
     <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
-  <body>
+  <body onload="handleOnLoad()">
     <!-- Top Strip - Laptop View -->
     <section class="top-strip-main-container">
       <div class="container">
         <div class="top-strip">
           <!-- Show in Mobile view -->
-          <div class="phone-login">
-            <span onclick="window.location='./login.html'"><i class="fa-regular fa-user"></i> Login</span>
+          <div id="phone-login" class="phone-login">
+            <span onclick="window.location='./login.html'"
+              ><i class="fa-regular fa-user"></i> Login</span
+            >
             <span><i class="fa-regular fa-pen-to-square"></i> Register</span>
           </div>
 
@@ -125,19 +127,34 @@
                   <option value="">Main</option>
                 </select>
               </div>
-              <input onchange="handleSearch()" id="search" type="text" placeholder="Search here....." />
-              <i onclick="handleSearch()" class="search-icon fa-solid fa-magnifying-glass"></i>
+              <input
+                onchange="handleSearch()"
+                id="search"
+                type="text"
+                placeholder="Search here....."
+              />
+              <i
+                onclick="handleSearch()"
+                class="search-icon fa-solid fa-magnifying-glass"
+              ></i>
             </div>
             <div class="navigations">
-              <div onclick="window.location='./login.html'" class="login link">
-                <i class="fa-solid fa-user"></i>
-                <span>Login</span>
+              <div class="link" id="user-name">
+                <div
+                  onclick="window.location='./login.html'"
+                  class="login link"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span>Login</span>
+                </div>
               </div>
-              <div class="register link">
-                <i class="fa-regular fa-pen-to-square"></i>
-                <span>Register</span>
+              <div class="link" id="logout">
+                <div class="register link">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <span>Register</span>
+                </div>
               </div>
-              <div class="wishlist link">
+              <div onclick="handleShowCartItem('wishlist')" class="wishlist link">
                 <i class="fa-regular fa-heart"></i>
                 <span>Wishlist</span>
               </div>
@@ -146,8 +163,8 @@
                 <span>Compare</span>
               </div>
             </div>
-            <div class="header-data">
-              <span>0 items(s) - $0.00</span>
+            <div onclick="handleShowCartItem('cart')" class="header-data">
+              <span id="card-data-show">0 items(s) - $0.00</span>
               <i class="cart-icon fa-regular fa-cart-shopping-fast"></i>
             </div>
             <div class="hambarger">
@@ -193,39 +210,54 @@
                 <img src="https://wallpapercave.com/wp/wp2505778.jpg" alt="" />
                 <div class="content">
                   <div class="tag">Camera</div>
-                  <div class="heading">Best Camera option <br>
+                  <div class="heading">
+                    Best Camera option <br />
                     at any resolution
                   </div>
                   <div class="btn">
-                    <button>Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                    <button>
+                      Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="carousel-container">
-                <img src="https://www.etsy.com/img/28476617/r/il/faaba1/2982037048/il_fullxfull.2982037048_ar3w.jpg" alt="" />
+                <img
+                  src="https://www.etsy.com/img/28476617/r/il/faaba1/2982037048/il_fullxfull.2982037048_ar3w.jpg"
+                  alt=""
+                />
                 <div class="content">
                   <div class="tag">Mobile</div>
-                  <div class="heading">Best Mobile option <br>
+                  <div class="heading">
+                    Best Mobile option <br />
                     at any price
                   </div>
                   <div class="btn">
-                    <button>Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                    <button>
+                      Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="carousel-container">
-                <img src="https://i.pinimg.com/originals/c6/07/af/c607afba1d443abcbb2f22eb45c143c0.jpg" alt="" />
+                <img
+                  src="https://i.pinimg.com/originals/c6/07/af/c607afba1d443abcbb2f22eb45c143c0.jpg"
+                  alt=""
+                />
                 <div class="content">
                   <div class="tag">Smart Watch</div>
-                  <div class="heading">Best Watch option <br>
+                  <div class="heading">
+                    Best Watch option <br />
                     at any resolution
                   </div>
                   <div class="btn">
-                    <button>Learn More <i class="fa-solid fa-arrow-right"></i></button>
+                    <button>
+                      Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -235,14 +267,20 @@
         <!-- Side Imgs -->
         <div class="side-container">
           <div class="img">
-            <img src="https://images.unsplash.com/photo-1632280071595-b13521457242?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""  />
+            <img
+              src="https://images.unsplash.com/photo-1632280071595-b13521457242?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+            />
             <div class="data">
               <h3>Watch</h3>
               <p>Build your own high PC.</p>
             </div>
           </div>
           <div class="img">
-            <img src="https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-238118.jpg&fm=jpg" alt="" />
+            <img
+              src="https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?cs=srgb&dl=pexels-j%C3%A9shoots-238118.jpg&fm=jpg"
+              alt=""
+            />
             <div class="data">
               <h3>Computers</h3>
               <p>Build your own high PC.</p>
@@ -309,17 +347,27 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this) + categoryRender('top_category')" class="active">Top Categories</li>
-            <li onclick="ActiveClass(this) + categoryRender('electronics')">Electronics</li>
-            <li onclick="ActiveClass(this) + categoryRender('beauty')">Beauty</li>
-            <li onclick="ActiveClass(this) + categoryRender('fashion')">Fashion</li>
+            <li
+              onclick="ActiveClass(this) + categoryRender('top_category')"
+              class="active"
+            >
+              Top Categories
+            </li>
+            <li onclick="ActiveClass(this) + categoryRender('electronics')">
+              Electronics
+            </li>
+            <li onclick="ActiveClass(this) + categoryRender('beauty')">
+              Beauty
+            </li>
+            <li onclick="ActiveClass(this) + categoryRender('fashion')">
+              Fashion
+            </li>
           </ul>
         </div>
 
         <!-- Cards -->
-        <div id="category" class="category-cards">
-          
-        </div>
+        <div id="category" class="category-cards"></div>
+        
       </div>
     </section>
 
@@ -340,16 +388,26 @@
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this) + productRender('featured')" class="active">Featured</li>
-            <li onclick="ActiveClass(this) + productRender('latest')">Latest</li>
-            <li onclick="ActiveClass(this) + productRender('bestsellers')">Bestsellers</li>
-            <li onclick="ActiveClass(this) + productRender('specials')">Specials</li>
+            <li
+              onclick="ActiveClass(this) + productRender('featured')"
+              class="active"
+            >
+              Featured
+            </li>
+            <li onclick="ActiveClass(this) + productRender('latest')">
+              Latest
+            </li>
+            <li onclick="ActiveClass(this) + productRender('bestsellers')">
+              Bestsellers
+            </li>
+            <li onclick="ActiveClass(this) + productRender('specials')">
+              Specials
+            </li>
           </ul>
         </div>
 
         <!-- Cards -->
         <div id="featuredProduct2" class="category-cards">
-          
           <div class="see-all-btn">
             <button>
               SEE ALL BUTTON <i class="fa-solid fa-arrow-right"></i>
@@ -358,7 +416,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- Featured Products - Section -->
     <section id="featured-product-2" class="featured-product-2">
@@ -374,14 +431,9 @@
           </p>
         </div>
 
-        <div id="fashion" class="inner-container">
-          
-        </div>
-          </div>
-        </div>
+        <div id="fashion" class="inner-container"></div>
       </div>
     </section>
-
 
     <!-- Shop By Brand -->
     <section id="shop-by-brand" class="shop-by-brand">
@@ -392,101 +444,91 @@
             <div class="owl-carousel owl-theme">
               <div class="item">
                 <div class="card">
-                  <img src="https://cdn.logojoy.com/wp-content/uploads/2018/08/23162125/apple-logo-1024x728.png" alt="">
+                  <img
+                    src="https://cdn.logojoy.com/wp-content/uploads/2018/08/23162125/apple-logo-1024x728.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfBTMcdkQCNGkGyhPU7ifMfzH7KY7wEqH0SqxhBuPXcMeZ__FliyW3_XnBnrF-i-zIic&usqp=CAU" alt="">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfBTMcdkQCNGkGyhPU7ifMfzH7KY7wEqH0SqxhBuPXcMeZ__FliyW3_XnBnrF-i-zIic&usqp=CAU"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu9buKQwKwwxmiMK_m1DjM8x8Vt4X0ZrmpUfz4v1yDQv2YTxSzg6hi83aD1ZvoEj8Ggjg&usqp=CAU" alt="">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu9buKQwKwwxmiMK_m1DjM8x8Vt4X0ZrmpUfz4v1yDQv2YTxSzg6hi83aD1ZvoEj8Ggjg&usqp=CAU"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://www.seekpng.com/png/detail/29-295922_google-plus-grey-icon-logo-google-plus-png.png" alt="">
+                  <img
+                    src="https://www.seekpng.com/png/detail/29-295922_google-plus-grey-icon-logo-google-plus-png.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6JfNKsou3XtXU-xWZqP1VXFF45NAfu4OsQ&usqp=CAU" alt="">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6JfNKsou3XtXU-xWZqP1VXFF45NAfu4OsQ&usqp=CAU"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://www.creativefabrica.com/wp-content/uploads/2020/02/10/Eagle-Logo-Graphics-1-20.jpg" alt="">
+                  <img
+                    src="https://www.creativefabrica.com/wp-content/uploads/2020/02/10/Eagle-Logo-Graphics-1-20.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://p.kindpng.com/picc/s/150-1504398_hyundai-logo-transparent-png-clipart-png-download-hyundai.png" alt="">
+                  <img
+                    src="https://p.kindpng.com/picc/s/150-1504398_hyundai-logo-transparent-png-clipart-png-download-hyundai.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb7VFenuMCcKk7BkcNQJHnHIsw3_AjUBwow&usqp=CAU" alt="">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwb7VFenuMCcKk7BkcNQJHnHIsw3_AjUBwow&usqp=CAU"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://images.squarespace-cdn.com/content/v1/5677193fc21b8664a2043441/1631756009918-DXUKK01WXDA5NEFOFLKE/Company+Logos-05.png?format=500w" alt="">
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/5677193fc21b8664a2043441/1631756009918-DXUKK01WXDA5NEFOFLKE/Company+Logos-05.png?format=500w"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://images.squarespace-cdn.com/content/v1/5677193fc21b8664a2043441/1631756221881-6CPVO069KL9EQIAR02M5/Company+Logos-07.png" alt="">
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/5677193fc21b8664a2043441/1631756221881-6CPVO069KL9EQIAR02M5/Company+Logos-07.png"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="item">
                 <div class="card">
-                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d326ba6-1412-40d2-becb-99c74b70e94a/ddo57vw-480fd581-7718-4137-bd37-79232e3bf459.png/v1/fill/w_500,h_500,strp/illenium_logo_png_by_manowigorbr_ddo57vw-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAwIiwicGF0aCI6IlwvZlwvM2QzMjZiYTYtMTQxMi00MGQyLWJlY2ItOTljNzRiNzBlOTRhXC9kZG81N3Z3LTQ4MGZkNTgxLTc3MTgtNDEzNy1iZDM3LTc5MjMyZTNiZjQ1OS5wbmciLCJ3aWR0aCI6Ijw9NTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.GwnYd4R4kuKKVDJYIqHX3uftuDfgPWyGjWXUhqgEH6U" alt="">
+                  <img
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d326ba6-1412-40d2-becb-99c74b70e94a/ddo57vw-480fd581-7718-4137-bd37-79232e3bf459.png/v1/fill/w_500,h_500,strp/illenium_logo_png_by_manowigorbr_ddo57vw-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAwIiwicGF0aCI6IlwvZlwvM2QzMjZiYTYtMTQxMi00MGQyLWJlY2ItOTljNzRiNzBlOTRhXC9kZG81N3Z3LTQ4MGZkNTgxLTc3MTgtNDEzNy1iZDM3LTc5MjMyZTNiZjQ1OS5wbmciLCJ3aWR0aCI6Ijw9NTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.GwnYd4R4kuKKVDJYIqHX3uftuDfgPWyGjWXUhqgEH6U"
+                    alt=""
+                  />
                 </div>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Improved gallery module -->
-    <section id="improved-gallery-module" class="improved-gallery-module">
-      <div class="container">
-        <div class="main-section">
-          <h1>Improved Gallery Module</h1>
-          <span class="underline"></span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis similique ut sint. At molestiae perferendis quas explicabo nisi quis, cupiditate ipsam quam, officiis obcaecati qui perspiciatis saepe ipsum earum.</p>
-          <div class="mobile-img">
-            <div class="imgs">
-              <div class="img">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg" alt="">
-              </div>
-              <div class="img">
-                <img src="https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg" alt="">
-              </div>
-              <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjQbglR67S7KmSVzdv0QZM2TsdCw5cbh-ySPBb_oi0fjoFIgGpor0apAVlFW10RWPNDk&usqp=CAU" alt="">
-              </div>
-              <div class="img">
-                <img src="https://media.istockphoto.com/id/532830457/photo/shanghai-lujiazui-night-scene.jpg?s=170667a&w=0&k=20&c=BAmrn6Ankt44hY4ngRs2pYc5a3_AGcrllDvFAC7tR6A=" alt="">
-              </div>
-              <div class="img">
-                <img src="https://media.istockphoto.com/id/587787576/photo/shanghai-skyline-at-dusk.jpg?s=1024x1024&w=is&k=20&c=ZDJc0OsyYYW3bNjC17TSvoLaB_qmaeEWqqtH36-_IWY=" alt="">
-              </div>
-              <div class="img">
-                <img src="https://media.istockphoto.com/id/969729424/photo/shanghai-china-modern-skyline.jpg?s=612x612&w=0&k=20&c=PR6FhXbjRfmD0C590eOSdozeZh7hDpIy8qLzfazOsf4=" alt="">
-              </div>
-              <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqNyTySgrNMyqTNuPuzgg1mJy9Z4NwC-raQ&usqp=CAU" alt="">
-              </div>
-              <div class="img">
-                <img src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg" alt="">
-              </div>
-              <div class="img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqLpDHvDTgdAlHRagNHdWCayZ6r9wS4EXyeOfk84J-Ih5nfvFl1_zGXPOSNnFyaf-j_0&usqp=CAU" alt="">
               </div>
             </div>
           </div>
@@ -494,6 +536,79 @@
       </div>
     </section>
 
+    <!-- Improved gallery module -->
+    <section id="improved-gallery-module" class="improved-gallery-module">
+      <div class="container">
+        <div class="main-section">
+          <h1>Improved Gallery Module</h1>
+          <span class="underline"></span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis
+            similique ut sint. At molestiae perferendis quas explicabo nisi
+            quis, cupiditate ipsam quam, officiis obcaecati qui perspiciatis
+            saepe ipsum earum.
+          </p>
+          <div class="mobile-img">
+            <div class="imgs">
+              <div class="img">
+                <img
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjQbglR67S7KmSVzdv0QZM2TsdCw5cbh-ySPBb_oi0fjoFIgGpor0apAVlFW10RWPNDk&usqp=CAU"
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://media.istockphoto.com/id/532830457/photo/shanghai-lujiazui-night-scene.jpg?s=170667a&w=0&k=20&c=BAmrn6Ankt44hY4ngRs2pYc5a3_AGcrllDvFAC7tR6A="
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://media.istockphoto.com/id/587787576/photo/shanghai-skyline-at-dusk.jpg?s=1024x1024&w=is&k=20&c=ZDJc0OsyYYW3bNjC17TSvoLaB_qmaeEWqqtH36-_IWY="
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://media.istockphoto.com/id/969729424/photo/shanghai-china-modern-skyline.jpg?s=612x612&w=0&k=20&c=PR6FhXbjRfmD0C590eOSdozeZh7hDpIy8qLzfazOsf4="
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqNyTySgrNMyqTNuPuzgg1mJy9Z4NwC-raQ&usqp=CAU"
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg"
+                  alt=""
+                />
+              </div>
+              <div class="img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqLpDHvDTgdAlHRagNHdWCayZ6r9wS4EXyeOfk84J-Ih5nfvFl1_zGXPOSNnFyaf-j_0&usqp=CAU"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- From Our Blog - Section -->
     <div id="from-our-blog" class="from-our-blog">
@@ -502,39 +617,37 @@
           <h1>From Our Blog</h1>
           <span class="underline"></span>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In sequi cum quasi iure. Molestiae, officia!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In sequi
+            cum quasi iure. Molestiae, officia!
           </p>
         </div>
 
         <!-- Category -->
         <div class="category">
           <ul>
-            <li onclick="ActiveClass(this) + blogRender('blog')" class="active">LATEST POSTS</li>
-            <li onclick="ActiveClass(this) + blogRender('most_viewed')">MOST READ</li>
+            <li onclick="ActiveClass(this) + blogRender('blog')" class="active">
+              LATEST POSTS
+            </li>
+            <li onclick="ActiveClass(this) + blogRender('most_viewed')">
+              MOST READ
+            </li>
           </ul>
         </div>
 
         <!-- Cards -->
-        <div id="blogs" class="category-cards from-our-blog-cards">
-          
-        </div>
-        </div>
+        <div id="blogs" class="category-cards from-our-blog-cards"></div>
       </div>
     </div>
-
 
     <!-- What are people saying - section -->
     <section id="what-are-people-saying" class="what-are-people-saying">
       <div class="container">
         <div class="main-container">
           <h1>What are people saying about us</h1>
-          <div id="comments" class="people-saying-cards">
-            
-          </div>
+          <div id="comments" class="people-saying-cards"></div>
         </div>
       </div>
     </section>
-
 
     <!-- Most Viewed - Section -->
     <section id="most-viewed" class="most-viewed">
@@ -542,114 +655,116 @@
         <div class="most-viewed-section">
           <h1>MOST VIEWED</h1>
           <span class="underline"></span>
-          <div id="most-viewed-card" class="cards">
-            
-          </div>
+          <div id="most-viewed-card" class="cards"></div>
         </div>
       </div>
     </section>
 
-
     <!-- Search Item Section -->
     <section class="search-item-section">
       <div class="container">
-        <div id="search-items" class="items-container">
-
+        <div id="search-items">
+          <div class="items-container"></div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-body">
-          <div class="footer-top">
-            <div class="container">
-              <div><i class="fa-brands fa-facebook-f"></i></div>
-              <div><i class="fa-brands fa-linkedin-in"></i></div>
-              <div><i class="fa-brands fa-instagram"></i></div>
-              <div><i class="fa-brands fa-slack"></i></div>
-              <div><i class="fa-brands fa-google"></i></div>
-              <div><i class="fa-brands fa-twitter"></i></div>
+      <div class="footer-body">
+        <div class="footer-top">
+          <div class="container">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-linkedin-in"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fa-brands fa-slack"></i></div>
+            <div><i class="fa-brands fa-google"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-about footer-comman">
+              <h2>About Us</h2>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Custom Links</a></li>
+              </ul>
             </div>
+            <div class="footer-customer footer-comman">
+              <h2>Customer Service</h2>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Unlimited Links</a></li>
+              </ul>
             </div>
-            <div class="container">
-              <div class="footer-content">
-                <div class="footer-about footer-comman">
-                  <h2>About Us</h2>
-                  <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Custom Links</a></li>
-                  </ul>
-                </div>
-                <div class="footer-customer footer-comman">
-                  <h2>Customer Service</h2>
-                  <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Site Map</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">Unlimited Links</a></li>
-                  </ul>
-                </div>
-                <div class="footer-account footer-comman">
-                  <h2>My Account</h2>
-                  <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Order History</a></li>
-                    <li><a href="#">Affilates</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">Gift Cerificates</a></li>
-                  </ul>
-                </div>
-                <div class="footer-news">
-                  <h2>Newsletter</h2>
-                  <p>Stay up to date with news and promotions by singing up for our newsletter</p>
-                  <div class="form">
-                    <div>
-                      <input id="email" placeholder="Your email" type="text">
-                      <button><i class="fa-regular fa-envelope"></i> Send</button>
-                    </div>
-                    <input type="checkbox" name="" id="">
-                    I have read and agree to the <a href="#">Privacy Policy.</a>
-                  </div>
-                </div>
-              </div>
+            <div class="footer-account footer-comman">
+              <h2>My Account</h2>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Affilates</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Gift Cerificates</a></li>
+              </ul>
             </div>
-          <div class="footer-bottom">
-            <div class="container">
-              <div class="footer-bottom-content">
-                <p>
-                  Copyright <i class="fa-regular fa-copyright"></i> 2014, Your
-                  Store, All Rights Reserved
-                </p>
-                <div class="right">
-                  <div class="img">
-                    <img src="./Assets/images/images-removebg-preview.png" alt="">
-                  </div>
-                  <span><a href="#header"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></span>
+            <div class="footer-news">
+              <h2>Newsletter</h2>
+              <p>
+                Stay up to date with news and promotions by singing up for our
+                newsletter
+              </p>
+              <div class="form">
+                <div>
+                  <input id="email" placeholder="Your email" type="text" />
+                  <button><i class="fa-regular fa-envelope"></i> Send</button>
                 </div>
+                <input type="checkbox" name="" id="" />
+                I have read and agree to the <a href="#">Privacy Policy.</a>
               </div>
             </div>
           </div>
         </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom-content">
+              <p>
+                Copyright <i class="fa-regular fa-copyright"></i> 2014, Your
+                Store, All Rights Reserved
+              </p>
+              <div class="right">
+                <div class="img">
+                  <img
+                    src="./Assets/images/images-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+                <span
+                  ><a href="#header"
+                    ><i class="fa-sharp fa-solid fa-arrow-up"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-
 
     <!-- Custom JavaScript -->
     <script>
-      function ActiveClass(element){     
+      function ActiveClass(element) {
         for (const child of element.parentNode.children) {
           child.classList.remove("active");
-        }     
+        }
         element.classList.add("active");
       }
-  </script>
-
-
-    
+    </script>
 
     <!-- JQuery JavaScript -->
     <script
@@ -696,8 +811,8 @@
         },
       });
 
-       // This Code for shop-by-brand card
-       $(".shop-by-brand .owl-carousel").owlCarousel({
+      // This Code for shop-by-brand card
+      $(".shop-by-brand .owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
@@ -714,9 +829,6 @@
           },
         },
       });
-
     </script>
-
-    
   </body>
 </html>

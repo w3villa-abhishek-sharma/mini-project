@@ -64,10 +64,10 @@ const productRender = async (type="featured") => {
                     <div class="more">
                       <div>
                         <input type="number" value="1" />
-                        <button>ADD TO CART</button>
+                        <button id="${element.id}" onclick="handleAddToCart(this,'cart')">ADD TO CART</button>
                       </div>
                       <div class="icons">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="${element.id}" onclick="handleAddToCart(this,'wishlist')" class="fa-regular fa-heart"></i>
                         <i class="fa-sharp fa-solid fa-right-left"></i>
                       </div>
                     </div>
