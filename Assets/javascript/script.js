@@ -35,16 +35,21 @@ function handleOnLoad() {
 }
 
 // Handle Search
-async function handleSearch(pageNo = 1) {
-  const input = document.getElementById("search");
+async function handleSearch(input, pageNo = 1) {
   const itemsContainer = document.getElementById("search-items");
   const response = await fetchData("items.json");
-  let html = `<div class="items-container">`;
+  const typeOfPresent = localStorage.getItem("repersent-type");
+  let html = ``;
+  if (typeOfPresent == "list") {
+    html = `<div id="item-repersent-type" class="items-container-list">`;
+  } else {
+    html = `<div id="item-repersent-type" class="items-container">`;
+  }
   let chunk = 8;
   let filterData = [];
-  if (input.value.length) {
+  if (input) {
     filterData = response.product.filter((element) => {
-      if (element.name.toLowerCase().match(input.value.toLowerCase())) {
+      if (element.name.toLowerCase().match(input.toLowerCase())) {
         return element;
       }
     });
@@ -86,6 +91,7 @@ async function handleSearch(pageNo = 1) {
               </div>
               <div class="card-data">
                 <h1>${element.name}</h1>
+                <p class="description">${element.decription}</p>
                 <div>$${element.price}.00 <strike>${
           element.off
         }.00 %</strike></div>
@@ -375,4 +381,62 @@ function handleRemoveToCart(element, listType) {
     ).innerText = `${itemCount} items(s) - $${totalAmount}.00`;
   }
   alert("Item remove successfully");
+}
+
+var acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.parentElement.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      acc[i].parentElement.children[0].style.color = "rgb(95, 95, 95)";
+      acc[i].parentElement.children[1].style.color = "rgb(95, 95, 95)";
+      acc[i].innerHTML = `<i class="fa-solid fa-plus plus-minus "></i>`;
+    } else {
+      panel.style.display = "block";
+      acc[i].parentElement.children[0].style.color = "#0427A5";
+      acc[i].parentElement.children[1].style.color = "#0427A5";
+      acc[i].innerHTML = `<i class="fa-solid fa-minus plus-minus "></i>`;
+    }
+  });
+}
+
+// Handle on Load Repersent Formate use
+const onLoadSearchRepresent = () => {
+  const typeOfPresent = localStorage.getItem("repersent-type");
+  let type = document.getElementById("item-repersent-type");
+  if (type.classList[0] === "items-container" && typeOfPresent !== "grid") {
+    type.classList.remove("items-container");
+    type.classList.add("items-container-list");
+  }
+};
+
+// Handle Search Item Repersent Formate - Grid,List
+const handleSearchRepresent = (typeOfPresent) => {
+  localStorage.setItem("repersent-type", typeOfPresent);
+  const type = document.getElementById("item-repersent-type");
+  if (typeOfPresent == "grid") {
+    type.classList.add("items-container");
+    type.classList.remove("items-container-list");
+  } else if (typeOfPresent == "list") {
+    type.classList.remove("items-container");
+    type.classList.add("items-container-list");
+  }
+};
+
+// Handle Query search
+function handleSearchQuery() {
+  let searchInput = document.getElementById("search").value;
+  window.location = `./search.html?search=${searchInput}`;
+}
+
+// Handle Read Search Query
+function handleReadSearchQuery() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const input = urlParams.get("search");
+  document.getElementById("search").value = input;
+  document.getElementById("search-value").innerHTML = input;
+  document.getElementById("search2").value = input;
+  handleSearch(input);
 }

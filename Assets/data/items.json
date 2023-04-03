@@ -11,7 +11,8 @@
       "top_branded": true,
       "off": 70,
       "hot": true,
-      "type": "featured"
+      "type": "featured",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "top_branded": true,
       "off": 10,
       "hot": true,
-      "type": "featured"
+      "type": "featured",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "top_branded": false,
       "off": 20,
       "hot": false,
-      "type": "featured"
+      "type": "featured",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "top_branded": false,
       "off": 0,
       "hot": true,
-      "type": "featured"
+      "type": "featured",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "free": false,
       "top_branded": true,
       "hot": false,
-      "type": "featured"
+      "type": "featured",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "id":6,
@@ -76,7 +81,8 @@
       "free": false,
       "top_branded": true,
       "hot": false,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -89,7 +95,8 @@
       "top_branded": true,
       "hot": false,
       "id":7,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -102,7 +109,8 @@
       "top_branded": true,
       "hot": false,
       "id":8,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -115,7 +123,8 @@
       "top_branded": true,
       "hot": false,
       "id":9,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -128,7 +137,8 @@
       "top_branded": true,
       "hot": false,
       "id":10,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -141,7 +151,8 @@
       "top_branded": true,
       "hot": false,
       "id":11,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -154,7 +165,8 @@
       "top_branded": true,
       "hot": false,
       "id":12,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -167,7 +179,8 @@
       "top_branded": true,
       "hot": false,
       "id":13,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -180,7 +193,8 @@
       "top_branded": true,
       "hot": false,
       "id":14,
-      "type": "latest"
+      "type": "latest",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -193,7 +207,8 @@
       "top_branded": true,
       "hot": false,
       "id":15,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -206,7 +221,8 @@
       "top_branded": true,
       "hot": false,
       "id":16,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -219,7 +235,8 @@
       "top_branded": true,
       "hot": false,
       "id":17,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -232,7 +249,8 @@
       "top_branded": true,
       "hot": false,
       "id":18,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -245,7 +263,8 @@
       "top_branded": true,
       "hot": false,
       "id":19,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -258,7 +277,8 @@
       "top_branded": true,
       "hot": false,
       "id":20,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -271,7 +291,8 @@
       "top_branded": true,
       "hot": false,
       "id":21,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -284,7 +305,8 @@
       "top_branded": true,
       "hot": false,
       "id":22,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -297,7 +319,8 @@
       "top_branded": true,
       "hot": false,
       "id":23,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -310,7 +333,8 @@
       "top_branded": true,
       "hot": false,
       "id":24,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -323,7 +347,8 @@
       "top_branded": true,
       "hot": false,
       "id":25,
-      "type": "bestsellers"
+      "type": "bestsellers",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -336,7 +361,8 @@
       "top_branded": true,
       "hot": false,
       "id":26,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -349,7 +375,8 @@
       "top_branded": true,
       "hot": false,
       "id":27,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -362,7 +389,8 @@
       "top_branded": true,
       "hot": false,
       "id":28,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -375,7 +403,8 @@
       "top_branded": true,
       "hot": false,
       "id":29,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -388,7 +417,8 @@
       "top_branded": true,
       "hot": false,
       "id":30,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -401,7 +431,8 @@
       "top_branded": true,
       "hot": false,
       "id":31,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -414,7 +445,8 @@
       "top_branded": true,
       "hot": false,
       "id":32,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -427,7 +459,8 @@
       "top_branded": true,
       "hot": false,
       "id":33,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -440,7 +473,8 @@
       "top_branded": true,
       "hot": false,
       "id":34,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "name": "Apple",
@@ -453,7 +487,8 @@
       "top_branded": true,
       "hot": false,
       "id":35,
-      "type": "specials"
+      "type": "specials",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSl4LdNnauQ7lugFOJCJIn1XeNYXdX0hRaxvfLpB138hQh77sI7Tg5k6A3DimAguI1anI&usqp=CAU",
@@ -466,7 +501,8 @@
       "off": 70,
       "hot": true,
       "id":36,
-      "type": "new_fashion"
+      "type": "new_fashion",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://media.vetrinalive.com/wp-content/uploads/2022/01/10123410/eCommerce-Product-Photography.jpg",
@@ -479,7 +515,8 @@
       "off": 70,
       "hot": true,
       "id":37,
-      "type": "new_fashion"
+      "type": "new_fashion",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
@@ -492,7 +529,8 @@
       "off": 50,
       "hot": true,
       "id":38,
-      "type": "new_fashion"
+      "type": "new_fashion",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMPXLGmBHJKY7JKjjwP4D_YYXzllGZwZZmFMuBWUcafaXYO5KygRMAwUPnL8-AgcnteE&usqp=CAU",
@@ -505,7 +543,8 @@
       "off": 40,
       "hot": false,
       "id":39,
-      "type": "new_fashion"
+      "type": "new_fashion",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
@@ -518,7 +557,8 @@
       "off": 40,
       "hot": false,
       "id":39,
-      "type": "most_viewed"
+      "type": "most_viewed",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
@@ -531,7 +571,8 @@
       "off": 40,
       "hot": false,
       "id":40,
-      "type": "most_viewed"
+      "type": "most_viewed",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
@@ -544,7 +585,8 @@
       "off": 40,
       "hot": true,
       "id":41,
-      "type": "most_viewed"
+      "type": "most_viewed",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcqawCmTE0FK3CpaK1di9zZQHO8KRgFvi0Q&usqp=CAU",
@@ -557,7 +599,8 @@
       "off": 40,
       "hot": true,
       "id":42,
-      "type": "most_viewed"
+      "type": "most_viewed",
+      "decription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit adipisci dolore animi sunt at eligendi placeat laboriosam repellat deserunt provident illum voluptas, velit consectetur, obcaecati quam commodi. Dolor, maxime laboriosam!"
     }
   ],
   "fashion": {

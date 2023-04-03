@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce | Dashboard</title>
+
+    <!-- Link Icons -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Default"
+      disabled
+      href="/css/app-af6a05f42b013986b481566363f0186f.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-df1bd4d47fc6bf066625b27b61ccafe7.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css"
+    />
+
+    <!-- Link Roboto Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Owl CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/css/search.css" />
+  </head>
+  <body onload="onLoadSearchRepresent()+handleReadSearchQuery()">
+    <!-- Top Strip - Laptop View -->
+    <section class="top-strip-main-container">
+      <div class="container">
+        <div class="top-strip">
+          <!-- Show in Mobile view -->
+          <div id="phone-login" class="phone-login">
+            <span onclick="window.location='./login.html'"
+              ><i class="fa-regular fa-user"></i> Login</span
+            >
+            <span><i class="fa-regular fa-pen-to-square"></i> Register</span>
+          </div>
+
+          <!-- Show Laptop View -->
+          <ul>
+            <li>
+              <a href="#"><i class="fa-regular fa-house"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-address-card"></i> About Us</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-envelope"></i> Contact</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-question"></i> FAQ
+                <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="mid">
+            <span> English <i class="fa-solid fa-angle-down"></i> </span>
+            <span>
+              <i class="fa-solid fa-dollar-sign"></i> US Dollar
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+          <div class="mid right">
+            <span> <i class="fa-regular fa-user-vneck"></i> More Menus </span>
+            <span> <i class="fa-solid fa-truck"></i> Delivery </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header -->
+    <header>
+      <div id="header" class="header-1">
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <div class="icon">Journal</div>
+            </div>
+            <div class="search">
+              <div class="custom-select">
+                <select>
+                  <option value="">All</option>
+                  <option value="">Other</option>
+                  <option value="">Main</option>
+                </select>
+              </div>
+              <input id="search" type="text" placeholder="Search here....." />
+              <i
+                onclick="handleSearchQuery()"
+                class="search-icon fa-solid fa-magnifying-glass"
+              ></i>
+            </div>
+            <div class="navigations">
+              <div class="link" id="user-name">
+                <div
+                  onclick="window.location='./login.html'"
+                  class="login link"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span>Login</span>
+                </div>
+              </div>
+              <div class="link" id="logout">
+                <div class="register link">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <span>Register</span>
+                </div>
+              </div>
+              <div
+                onclick="handleShowCartItem('wishlist')"
+                class="wishlist link"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <span>Wishlist</span>
+              </div>
+              <div class="compare link">
+                <i class="fa-solid fa-arrows-repeat"></i>
+                <span>Compare</span>
+              </div>
+            </div>
+            <div onclick="handleShowCartItem('cart')" class="header-data">
+              <span id="card-data-show">0 items(s) - $0.00</span>
+              <i class="cart-icon fa-regular fa-cart-shopping-fast"></i>
+            </div>
+            <div class="hambarger">
+              <span><i class="fa-solid fa-bars"></i></span>
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span><i class="fa-solid fa-cart-shopping-fast"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sub Menu -->
+      <section class="header-2">
+        <div class="container">
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <div class="tag">SALE</div>
+                <a href="#"><i class="fa-solid fa-bars"></i> ALL DEPARTMENTS</a>
+              </li>
+              <li><a href="#">MULTILEVEL</a></li>
+              <li>
+                <div class="tag new">NEW</div>
+                <a href="#">MEGA MENU</a>
+              </li>
+              <li><a href="#">FULLWIDTH</a></li>
+            </ul>
+            <div class="right">
+              <span><i class="fa-solid fa-phone"></i> 1800-555-666</span>
+              <span><i class="fa-solid fa-message"></i> BLOG</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Search Item Section -->
+    <!-- <section class="search-item-section">
+        <div class="container">
+          <div id="search-items">
+            <div class="items-container"></div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- Icon Section -->
+    <section class="container icons">
+      <i class="fa-regular fa-house"></i>&nbsp;
+      <i class="fa-solid fa-arrow-right"></i> &nbsp; Search
+    </section>
+
+    <section class="search-main">
+      <div class="heading1">
+        <div class="container">Search - <span id="search-value"></span></div>
+      </div>
+      <div class="container">
+        <div class="search-container">
+          <div class="left-filter-section">
+            <div class="filter-heading">
+              <span>Filter</span>
+              <span
+                ><i class="fa-sharp fa-solid fa-circle-xmark"></i> Clear</span
+              >
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>PRICE</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <div class="filter-content">
+                  <div class="price-filter">
+                    <div class="price-range">
+                      <div class="wrapper">
+                        <div class="slider">
+                          <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                          <input
+                            type="range"
+                            class="range-min"
+                            min="0"
+                            max="10000"
+                            value="2500"
+                            step="100"
+                          />
+                          <input
+                            type="range"
+                            class="range-max"
+                            min="0"
+                            max="10000"
+                            value="7500"
+                            step="100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price price-input">
+                      <div class="field">
+                        <input
+                          disabled
+                          type="number"
+                          class="input-min"
+                          value="2500"
+                        />
+                        <span>$</span>
+                      </div>
+                      <div class="separator"></div>
+                      <div class="field">
+                        <input
+                          disabled
+                          type="number"
+                          class="input-max"
+                          value="7500"
+                        />
+                        <span>$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>AVAILABILITY</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <div class="filter-content">
+                  <div class="right-searching-checkbox">
+                    <p><input type="checkbox" />In Stock</p>
+                    <p><input type="checkbox" />Out of Stock</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>SUBCATEGORIES</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <div class="filter-content">
+                  <div class="sub-category">
+                    <div class="img">
+                      <img
+                        src="https://img.freepik.com/free-psd/laptop-psd-mockup-with-gradient-led-light_53876-138283.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="name">Electronics</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>BRANDS</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <div class="filter-content">
+                  <div class="brand">
+                    <div class="img">
+                      <img
+                        src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/apple-logo.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="img">
+                      <img
+                        src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/green-company-logo-design-template-e6cda0adebc58ba974fa4d2d02a14d1e_screen.jpg?ts=1567170398"
+                        alt=""
+                      />
+                    </div>
+                    <div class="img">
+                      <img
+                        src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01104813/1268.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>SELECT</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <p class="filter-content"></p>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>RADIO</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <p class="filter-content"></p>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>COLOR</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <div class="filter-content">
+                  <div class="colors">
+                    <div class="color color2"></div>
+                    <div class="color color1"></div>
+                    <div class="color color3"></div>
+                    <div class="color color4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>CLOCKSPEED</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <p class="filter-content"></p>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>TEST1</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <p class="filter-content"></p>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>NO OF COLORS</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <p class="filter-content"></p>
+              </div>
+            </div>
+            <div class="filters">
+              <div class="heading">
+                <span>STYLE</span
+                ><span class="accordion"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="panel">
+                <p class="filter-content"></p>
+              </div>
+            </div>
+          </div>
+          <div class="right-search-section">
+            <div class="right-search-top">
+              <div class="right-searching-inputs">
+                <div class="search-input-perant">
+                  <input id="search2" type="search" placeholder="Search..." />
+                </div>
+                <div class="right-searching-catagories">
+                  <select name="catagories" id="all-catagories">
+                    <option value="">All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Fashion">Fashion</option>
+                  </select>
+                </div>
+              </div>
+              <div class="right-searching-checkbox">
+                <p><input type="checkbox" />Search in subcategories</p>
+                <p><input type="checkbox" />Search in product descriptions</p>
+              </div>
+              <div class="search-btn">
+                <button onchange="handleSearchQuery()">SEARCH</button>
+              </div>
+              <div class="right-searching-heading">
+                <h1>Products meeting the search criteria</h1>
+              </div>
+              <div class="searching-show-option">
+                <div class="grid-list">
+                  <p>
+                    <i
+                      onclick="handleSearchRepresent('grid')"
+                      class="fa-solid fa-grid"
+                    ></i>
+                    <i
+                      onclick="handleSearchRepresent('list')"
+                      class="fa-solid fa-list"
+                    ></i>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-code-compare"></i> Product Compare
+                  </p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+
+            <!-- Search Item Show -->
+            <div class="search-items-container">
+              <section class="search-item-section">
+                <div class="">
+                  <div id="search-items">
+                    <div id="item-repersent-type" class="items-container">
+                      <div class="category-card">
+                        <div class="img">
+                          <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSl4LdNnauQ7lugFOJCJIn1XeNYXdX0hRaxvfLpB138hQh77sI7Tg5k6A3DimAguI1anI&usqp=CAU"
+                            alt=""
+                          />
+                          <div class="free">
+                            <span>Free</span>
+                          </div>
+                          <div class="free-2">
+                            <span>Top Branded</span>
+                          </div>
+                          <div class="badges">
+                            <span class="badge badge1">-70%</span>
+                            <span class="badge badge2">hot</span>
+                            <span class="badge badge3">top brand</span>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="strip">
+                            <a href="#">APPle</a>
+                            <span>Model 255</span>
+                          </div>
+                          <div class="card-data">
+                            <h1>Watch</h1>
+                            <p class="description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Incidunt, porro consectetur! Quod hic, est
+                              ducimus eum alias ratione voluptatum dolore
+                              laudantium facilis ipsa beatae, mollitia fugiat
+                              aspernatur repudiandae earum voluptatibus vero
+                              incidunt, fuga voluptas esse magnam sit iusto
+                              cupiditate? Deleniti.
+                            </p>
+                            <div>$200.00 <strike>$100.00 %</strike></div>
+                            <div class="more">
+                              <div>
+                                <input type="number" value="1" />
+                                <button
+                                  id="${
+                                          element.id
+                                        }"
+                                  onclick="handleAddToCart(this)"
+                                >
+                                  ADD TO CART
+                                </button>
+                              </div>
+                              <div class="icons">
+                                <i
+                                  id="${
+                                          element.id
+                                        }"
+                                  onclick="handleAddToCart(this,'wishlist')"
+                                  class="fa-regular fa-heart"
+                                ></i>
+                                <i class="fa-sharp fa-solid fa-right-left"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                            <span
+                              ><i class="fa-light fa-circle-dollar green"></i>
+                              Buy Now</span
+                            >
+                            <span
+                              ><i class="fa-solid fa-question red"></i>
+                              Question</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Viewed - Section -->
+    <section id="most-viewed" class="most-viewed">
+      <div class="container">
+        <div class="most-viewed-section">
+          <h1>MOST VIEWED</h1>
+          <span class="underline"></span>
+          <div id="most-viewed-card" class="cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-body">
+        <div class="footer-top">
+          <div class="container">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-linkedin-in"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fa-brands fa-slack"></i></div>
+            <div><i class="fa-brands fa-google"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-about footer-comman">
+              <h2>About Us</h2>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Custom Links</a></li>
+              </ul>
+            </div>
+            <div class="footer-customer footer-comman">
+              <h2>Customer Service</h2>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Unlimited Links</a></li>
+              </ul>
+            </div>
+            <div class="footer-account footer-comman">
+              <h2>My Account</h2>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Affilates</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Gift Cerificates</a></li>
+              </ul>
+            </div>
+            <div class="footer-news">
+              <h2>Newsletter</h2>
+              <p>
+                Stay up to date with news and promotions by singing up for our
+                newsletter
+              </p>
+              <div class="form">
+                <div>
+                  <input id="email" placeholder="Your email" type="text" />
+                  <button><i class="fa-regular fa-envelope"></i> Send</button>
+                </div>
+                <input type="checkbox" name="" id="" />
+                I have read and agree to the <a href="#">Privacy Policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom-content">
+              <p>
+                Copyright <i class="fa-regular fa-copyright"></i> 2014, Your
+                Store, All Rights Reserved
+              </p>
+              <div class="right">
+                <div class="img">
+                  <img
+                    src="./Assets/images/images-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+                <span
+                  ><a href="#header"
+                    ><i class="fa-sharp fa-solid fa-arrow-up"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script>
+      function ActiveClass(element) {
+        for (const child of element.parentNode.children) {
+          child.classList.remove("active");
+        }
+        element.classList.add("active");
+      }
+    </script>
+
+    <!-- JQuery JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./Assets/javascript/product.js"></script>
+    <script src="./Assets/javascript/script.js"></script>
+    <script src="./Assets/javascript/blog.js"></script>
+    <script src="./Assets/javascript/fashion.js"></script>
+    <script src="./Assets/javascript/mostViewed.js"></script>
+    <script src="./Assets/javascript/peopleComment.js"></script>
+    <script src="./Assets/javascript/category.js"></script>
+
+    <!-- Custom OWl Jquery -->
+    <script>
+      // This Code for main carousel
+      $(".owl-carousel.main-screen").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+
+      // This Code for shop-by-brand card
+      $(".shop-by-brand .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 3,
+          },
+          600: {
+            items: 6,
+          },
+          1000: {
+            items: 8,
+          },
+        },
+      });
+
+      const rangeInput = document.querySelectorAll(".range-input input"),
+        priceInput = document.querySelectorAll(".price-input input"),
+        range = document.querySelector(".slider .progress");
+      let priceGap = 1000;
+      priceInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minPrice = parseInt(priceInput[0].value),
+            maxPrice = parseInt(priceInput[1].value);
+          if (
+            maxPrice - minPrice >= priceGap &&
+            maxPrice <= rangeInput[1].max
+          ) {
+            if (e.target.className === "input-min") {
+              rangeInput[0].value = minPrice;
+              range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+            } else {
+              rangeInput[1].value = maxPrice;
+              range.style.right =
+                100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+            }
+          }
+        });
+      });
+      rangeInput.forEach((input) => {
+        input.addEventListener("input", (e) => {
+          let minVal = parseInt(rangeInput[0].value),
+            maxVal = parseInt(rangeInput[1].value);
+          if (maxVal - minVal < priceGap) {
+            if (e.target.className === "range-min") {
+              rangeInput[0].value = maxVal - priceGap;
+            } else {
+              rangeInput[1].value = minVal + priceGap;
+            }
+          } else {
+            priceInput[0].value = minVal;
+            priceInput[1].value = maxVal;
+            range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+            range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

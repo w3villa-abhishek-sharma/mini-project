@@ -1,6 +1,7 @@
 // Fetch Data from File
 const fetchData = async (fileName) => {
-  const response = await fetch(`https://w3villa-abhishek-sharma.github.io/mini-project/Assets/data/${fileName}`);
+  // const response = await fetch(`https://w3villa-abhishek-sharma.github.io/mini-project/Assets/data/${fileName}`);
+  const response = await fetch(`./Assets/data/${fileName}`);
   const data = await response.json();
   return data;
 };
