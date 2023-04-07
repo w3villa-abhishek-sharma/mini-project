@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce | Details</title>
+
+    <!-- Link Icons -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Default"
+      disabled
+      href="/css/app-af6a05f42b013986b481566363f0186f.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-df1bd4d47fc6bf066625b27b61ccafe7.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css"
+    />
+
+    <!-- Link Roboto Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Owl CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/css/search.css" />
+    <link rel="stylesheet" href="./Assets/css/detail.css" />
+  </head>
+  <body onload="onLoadSearchRepresent()+handleReadSearchQuery()">
+    <!-- Top Strip - Laptop View -->
+    <section class="top-strip-main-container">
+      <div class="container">
+        <div class="top-strip">
+          <!-- Show in Mobile view -->
+          <div id="phone-login" class="phone-login">
+            <span onclick="window.location='./login.html'"
+              ><i class="fa-regular fa-user"></i> Login</span
+            >
+            <span><i class="fa-regular fa-pen-to-square"></i> Register</span>
+          </div>
+
+          <!-- Show Laptop View -->
+          <ul>
+            <li>
+              <a href="#"><i class="fa-regular fa-house"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-address-card"></i> About Us</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-envelope"></i> Contact</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-question"></i> FAQ
+                <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="mid">
+            <span> English <i class="fa-solid fa-angle-down"></i> </span>
+            <span>
+              <i class="fa-solid fa-dollar-sign"></i> US Dollar
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+          <div class="mid right">
+            <span> <i class="fa-regular fa-user-vneck"></i> More Menus </span>
+            <span> <i class="fa-solid fa-truck"></i> Delivery </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header -->
+    <header>
+      <div id="header" class="header-1">
+        <div class="container">
+          <div class="header">
+            <div class="logo">
+              <div class="icon">Journal</div>
+            </div>
+            <div class="search">
+              <div class="custom-select">
+                <select>
+                  <option value="">All</option>
+                  <option value="">Other</option>
+                  <option value="">Main</option>
+                </select>
+              </div>
+              <input id="search" type="text" placeholder="Search here....." />
+              <i
+                onclick="handleSearchQuery()"
+                class="search-icon fa-solid fa-magnifying-glass"
+              ></i>
+            </div>
+            <div class="navigations">
+              <div class="link" id="user-name">
+                <div
+                  onclick="window.location='./login.html'"
+                  class="login link"
+                >
+                  <i class="fa-solid fa-user"></i>
+                  <span>Login</span>
+                </div>
+              </div>
+              <div class="link" id="logout">
+                <div class="register link">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <span>Register</span>
+                </div>
+              </div>
+              <div
+                onclick="handleShowCartItem('wishlist')"
+                class="wishlist link"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <span>Wishlist</span>
+              </div>
+              <div class="compare link">
+                <i class="fa-solid fa-arrows-repeat"></i>
+                <span>Compare</span>
+              </div>
+            </div>
+            <div onclick="handleShowCartItem('cart')" class="header-data">
+              <span id="card-data-show">0 items(s) - $0.00</span>
+              <i class="cart-icon fa-regular fa-cart-shopping-fast"></i>
+            </div>
+            <div class="hambarger">
+              <span><i class="fa-solid fa-bars"></i></span>
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span><i class="fa-solid fa-cart-shopping-fast"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sub Menu -->
+      <section class="header-2">
+        <div class="container">
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <div class="tag">SALE</div>
+                <a href="#"><i class="fa-solid fa-bars"></i> ALL DEPARTMENTS</a>
+              </li>
+              <li><a href="#">MULTILEVEL</a></li>
+              <li>
+                <div class="tag new">NEW</div>
+                <a href="#">MEGA MENU</a>
+              </li>
+              <li><a href="#">FULLWIDTH</a></li>
+            </ul>
+            <div class="right">
+              <span><i class="fa-solid fa-phone"></i> 1800-555-666</span>
+              <span><i class="fa-solid fa-message"></i> BLOG</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Icon Section -->
+    <section class="container icons">
+      <i class="fa-regular fa-house"></i>&nbsp;
+      <i class="fa-solid fa-arrow-right"></i> &nbsp; Search
+      <i class="fa-solid fa-arrow-right"></i> &nbsp;
+      <span id="product-name">Apple</span>
+    </section>
+
+    <section class="search-main">
+      <div class="heading1">
+        <div class="container">
+          Search - <span id="search-value">Apple</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="details-page-container">
+          <div class="left-section">
+            <div class="left-all-imgs">
+              <div class="left-img">
+                <img
+                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="left-img">
+                <img
+                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="left-img">
+                <img
+                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="left-img">
+                <img
+                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="selected-img">
+              <img
+                src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="right-top-navigation">
+              <div class="product-category-filters active">Description</div>
+              <div class="product-category-filters">Specification</div>
+              <div class="product-category-filters">Review</div>
+              <div class="product-category-filters">Custom tabs</div>
+            </div>
+            <div class="product-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Recusandae veritatis consectetur aliquam quos commodi dignissimos
+              aperiam reiciendis dolor minus suscipit porro deserunt, harum enim
+              assumenda.
+            </div>
+
+            <div class="product-reviews">
+              <div class="rating-icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#">Based on 1 reviews</a> &nbsp; - &nbsp;
+              <a href="#">Write a review</a>
+            </div>
+
+            <div class="main-details">
+              <div class="main-details-left">
+                <div>
+                  <strike>$ 78.46</strike>
+                </div>
+                <div class="price">$ 70.61</div>
+                <div class="extra-detail">
+                  <div>Ex Tax: <span>$ 70.61</span></div>
+                  <div>Price in reward points: <span>400</span></div>
+                  <div>10 or more: <span>$ 69.04</span></div>
+                  <div>20 or more: <span>$ 69.41</span></div>
+                  <div>30 or more: <span>$ 51.58</span></div>
+                </div>
+              </div>
+              <div class="main-details-right">
+                <div class="some-points">
+                  <div class="in-stock">
+                    <i class="fa-solid fa-check"></i> &nbsp; In Stock
+                  </div>
+                  <ul>
+                    <li>Reward Points: 100</li>
+                    <li>Model Product: 15</li>
+                    <li>Weight: 12.50kg</li>
+                    <li>Dimensions: 1.00cm x 2.00cm x 3.00cm</li>
+                  </ul>
+                </div>
+            </div>
+            <div class="product-company-logo">
+              <img
+                src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                alt=""
+                srcset=""
+              />
+              <span>Apple</span>
+            </div>
+            </div>
+
+            <div class="form-section">
+              <div>
+                <label for=""
+                  >Another Select <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <select name="" id="">
+                  <option value="another">--Please Select--</option>
+                </select>
+              </div>
+              <div>
+                <label for=""
+                  >Select list <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <select name="" id="">
+                  <option value="another">--Please Select--</option>
+                </select>
+              </div>
+              <div class="radio">
+                <label for=""
+                  >Radio <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <span>Small (+7.85$)</span>
+                <span>Medium (+15.85$)</span>
+                <span>Large (+27.25$)</span>
+              </div>
+
+              <div class="">
+                <label for=""
+                  >Single choice (with image)
+                  <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <div class="colors">
+                  <span class="color1 color"></span>
+                  <span class="color2 color"></span>
+                  <span class="color3 color"></span>
+                  <span class="color4 color"></span>
+                </div>
+              </div>
+
+              <div>
+                <label for=""
+                  >Text <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <input placeholder="text" type="text" name="" id="" />
+              </div>
+              <div>
+                <label for=""
+                  >Textarea <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <textarea
+                  rows="8"
+                  placeholder="Textarea"
+                  type="text"
+                  name=""
+                  id=""
+                ></textarea>
+              </div>
+
+              <div class="upload-file">
+                <label for="">File</label>
+                <input id="f02" type="file" placeholder="UPLODE FILE" />
+                <label id="f03" for="f02">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i> UPLODE FILE
+                </label>
+              </div>
+
+              <div>
+                <label for=""
+                  >Date <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <input class="date-time" type="date" name="" id="" />
+                <span><i class="fa-solid fa-calendar-days"></i></span>
+              </div>
+              <div>
+                <label for=""
+                  >Time <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <input class="date-time" type="date" name="" id="" /><span
+                  ><i class="fa-solid fa-calendar-days"></i
+                ></span>
+              </div>
+              <div>
+                <label for=""
+                  >Date & Time <i class="fa-solid fa-star-of-life"></i
+                ></label>
+                <input class="date-time" type="date" name="" id="" /><span
+                  ><i class="fa-solid fa-calendar-days"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="bottom-buttons-container">
+              <div class="quantity">
+                <div class="quantity-input">
+                  <input type="text" name="name" value="1" />
+                  <div class="button-container">
+                    <button class="up-btn" type="button" name="button">
+                      <i class="fa-sharp fa-regular fa-chevron-up"></i>
+                    </button>
+                    <button class="up-btn" type="button" name="button">
+                      <i class="fa-sharp fa-regular fa-chevron-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+              </button>
+              <button class="buy-button">
+                <i class="fa-regular fa-circle-dollar"></i> Buy now
+              </button>
+              <button class="question-button">
+                <i class="fa-regular fa-circle-question"></i>
+              </button>
+            </div>
+            <div class="wishlist-compare">
+              <i style="color: red" class="fa-regular fa-heart"></i>
+              <span>Add to Wishlist</span>
+              <i style="color: blue" class="fa-solid fa-code-compare"></i>
+              <span>Compare The Product</span>
+            </div>
+            <div class="info-quantity">
+              <i class="fa-sharp fa-solid fa-circle-info"></i> This product has
+              a minimum quantity of 2
+            </div>
+            <div class="social-space">
+              <div><i class="fa-brands fa-facebook-f"></i></div>
+              <div><i class="fa-brands fa-twitter"></i></div>
+              <div><i class="fa-brands fa-pinterest-p"></i></div>
+              <div><i class="fa-regular fa-envelope"></i></div>
+              <div>+7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Viewed - Section -->
+    <section id="most-viewed" class="most-viewed">
+      <div class="container">
+        <div class="most-viewed-section">
+          <h1>MOST VIEWED</h1>
+          <span class="underline"></span>
+          <div id="most-viewed-card" class="cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-body">
+        <div class="footer-top">
+          <div class="container">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-linkedin-in"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fa-brands fa-slack"></i></div>
+            <div><i class="fa-brands fa-google"></i></div>
+            <div><i class="fa-brands fa-twitter"></i></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-about footer-comman">
+              <h2>About Us</h2>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Custom Links</a></li>
+              </ul>
+            </div>
+            <div class="footer-customer footer-comman">
+              <h2>Customer Service</h2>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Unlimited Links</a></li>
+              </ul>
+            </div>
+            <div class="footer-account footer-comman">
+              <h2>My Account</h2>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Affilates</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Gift Cerificates</a></li>
+              </ul>
+            </div>
+            <div class="footer-news">
+              <h2>Newsletter</h2>
+              <p>
+                Stay up to date with news and promotions by singing up for our
+                newsletter
+              </p>
+              <div class="form">
+                <div>
+                  <input id="email" placeholder="Your email" type="text" />
+                  <button><i class="fa-regular fa-envelope"></i> Send</button>
+                </div>
+                <input type="checkbox" name="" id="" />
+                I have read and agree to the <a href="#">Privacy Policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom-content">
+              <p>
+                Copyright <i class="fa-regular fa-copyright"></i> 2014, Your
+                Store, All Rights Reserved
+              </p>
+              <div class="right">
+                <div class="img">
+                  <img
+                    src="./Assets/images/images-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+                <span
+                  ><a href="#header"
+                    ><i class="fa-sharp fa-solid fa-arrow-up"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./Assets/javascript/details.js"></script>
+    <script src="./Assets/javascript/product.js"></script>
+    <script src="./Assets/javascript/mostViewed.js"></script>
+  </body>
+</html>
