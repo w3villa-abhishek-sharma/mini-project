@@ -65,7 +65,7 @@
     <link rel="stylesheet" href="./Assets/css/search.css" />
     <link rel="stylesheet" href="./Assets/css/detail.css" />
   </head>
-  <body onload="onLoadSearchRepresent()+handleReadSearchQuery()">
+  <body>
     <!-- Top Strip - Laptop View -->
     <section class="top-strip-main-container">
       <div class="container">
@@ -221,36 +221,40 @@
             <div class="left-all-imgs">
               <div class="left-img">
                 <img
-                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                onclick="openImage(this)"
+                  src="https://m.media-amazon.com/images/I/71VR6c3j2bL._SL1500_.jpg"
                   alt=""
                   srcset=""
                 />
               </div>
               <div class="left-img">
                 <img
-                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                onclick="openImage(this)"
+                  src="https://ae01.alicdn.com/kf/S24c9adecba0c4499ab5d4b1eae89c9d0g/Fone-Bluetooth-Earphones-Wireless-Headphones-Magnetic-Sport-Neckband-Neck-hanging-TWS-Earbuds-Wireless-Blutooth-Headset-with.jpg_640x640.jpg"
                   alt=""
                   srcset=""
                 />
               </div>
               <div class="left-img">
                 <img
-                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                onclick="openImage(this)"
+                  src="https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg"
                   alt=""
                   srcset=""
                 />
               </div>
               <div class="left-img">
                 <img
-                  src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                    onclick="openImage(this)"
+                  src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
                   alt=""
                   srcset=""
                 />
               </div>
             </div>
-            <div class="selected-img">
+            <div id="active-img" class="selected-img">
               <img
-                src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
+                src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
                 alt=""
                 srcset=""
               />
@@ -258,17 +262,18 @@
           </div>
           <div class="right-section">
             <div class="right-top-navigation">
-              <div class="product-category-filters active">Description</div>
-              <div class="product-category-filters">Specification</div>
-              <div class="product-category-filters">Review</div>
-              <div class="product-category-filters">Custom tabs</div>
+              <div onclick="ActiveClass(this) + changeContent('1')" class="product-category-filters active">Description</div>
+              <div  onclick="ActiveClass(this) + changeContent('2')" class="product-category-filters">Specification</div>
+              <div onclick="ActiveClass(this) + changeContent('3')" class="product-category-filters">Review</div>
+              <div onclick="ActiveClass(this)  + changeContent('4')"  class="product-category-filters">Custom tabs</div>
             </div>
-            <div class="product-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Recusandae veritatis consectetur aliquam quos commodi dignissimos
-              aperiam reiciendis dolor minus suscipit porro deserunt, harum enim
-              assumenda.
+            <div id="product-description" class="product-description">
+                vitae aspernatur nemo cupiditate saepe perferendis recusandae beatae. Iure numquam sint amet dolores quo iste maxime ducimus blanditiis magnam hic repellendus corrupti, vitae aspernatur nemo cupiditate saepe perferendis recusandae beatae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur autem facilis cupiditate temporibus at nesciunt consectetur mollitia neque asperiores!
+              <div onclick="handleSeeMoreText()" id="see-more-text-btn" class="see-more-text-btn">
+                <i class="fa-regular fa-angle-down"></i> See more
+              </div>
             </div>
+
 
             <div class="product-reviews">
               <div class="rating-icons">
@@ -308,15 +313,15 @@
                     <li>Dimensions: 1.00cm x 2.00cm x 3.00cm</li>
                   </ul>
                 </div>
-            </div>
-            <div class="product-company-logo">
-              <img
-                src="https://www.cloudways.com/blog/wp-content/uploads/Ice-Skates.jpg"
-                alt=""
-                srcset=""
-              />
-              <span>Apple</span>
-            </div>
+              </div>
+              <div class="product-company-logo">
+                <img
+                  src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
+                  alt=""
+                  srcset=""
+                />
+                <span>Apple</span>
+              </div>
             </div>
 
             <div class="form-section">
@@ -456,6 +461,92 @@
       </div>
     </section>
 
+    <!-- Related product section -->
+    <section class="featured-product-2 related-product">
+      <div class="container">
+        <div class="">
+          <div class="inner-container">
+            <div class="right-card-container">
+              <!-- Cards -->
+              <div class="category-cards">
+                <div class="item">
+                  <div class="category-card">
+                    <div class="img">
+                      <img
+                        src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
+                        alt=""
+                      />
+                      <div class="free-2">
+                        <span>Top Branded</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="name">Apple</div>
+                      <span>$279.00</span>
+                    </div>
+                    <div class="card-footer">
+                      <button
+                        id="${element.id}"
+                        onclick="handleAddToCart(this,'cart')"
+                      >
+                        Add to Card
+                      </button>
+                      <span>
+                        <i
+                          id="${element.id}"
+                          onclick="handleAddToCart(this,'wishlist')"
+                          class="fa-regular fa-heart"
+                        ></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-card-container">
+              <!-- Cards -->
+              <div class="category-cards">
+                <div class="item">
+                  <div class="category-card">
+                    <div class="img">
+                      <img
+                        src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
+                        alt=""
+                      />
+                      <div class="free-2">
+                        <span>Top Branded</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="name">Apple</div>
+                      <span>$279.00</span>
+                    </div>
+                    <div class="card-footer">
+                      <button
+                        id="${element.id}"
+                        onclick="handleAddToCart(this,'cart')"
+                      >
+                        Add to Card
+                      </button>
+                      <span>
+                        <i
+                          id="${element.id}"
+                          onclick="handleAddToCart(this,'wishlist')"
+                          class="fa-regular fa-heart"
+                        ></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Most Viewed - Section -->
     <section id="most-viewed" class="most-viewed">
       <div class="container">
@@ -553,6 +644,16 @@
         </div>
       </div>
     </footer>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function ActiveClass(element) {
+          for (const child of element.parentNode.children) {
+            child.classList.remove("active");
+          }
+          element.classList.add("active");
+        }
+      </script>
 
     <!-- JQuery JavaScript -->
     <script

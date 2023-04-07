@@ -74,6 +74,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
+.see-more-text-btn{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    background-color: #05299D;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+  -webkit-text-fill-color: #fff;
+}
 .container {
     width: 85vw;
     margin: auto;
