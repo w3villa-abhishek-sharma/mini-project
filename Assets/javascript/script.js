@@ -169,13 +169,23 @@ async function handleAddToCart(element, listType) {
         }
       });
       cartData.push(data[0]);
-      alert("Item added successfully");
+      Swal.fire({
+        title: 'Success!',
+        text: "Item added successfully",
+        icon: 'success',
+        confirmButtonText: 'OK'
+      })
     }
   } else {
     for (let i = 0; i < cartData.length; i++) {
       if (cartData[i].id == element.id) {
         status = true;
-        alert("Already added into wishlist");
+        Swal.fire({
+          title: 'Success!',
+          text: "Already added into wishlist",
+          icon: 'success',
+          confirmButtonText: 'OK'
+        })
         break;
       }
     }
@@ -186,7 +196,12 @@ async function handleAddToCart(element, listType) {
         }
       });
       cartData.push(data[0]);
-      alert("Item added successfully");
+      Swal.fire({
+        title: 'Success!',
+        text: "Item added successfully",
+        icon: 'success',
+        confirmButtonText: 'OK'
+      })
     }
   }
   localStorage.setItem(listType, JSON.stringify(cartData));
@@ -380,7 +395,12 @@ function handleRemoveToCart(element, listType) {
       "card-data-show"
     ).innerText = `${itemCount} items(s) - $${totalAmount}.00`;
   }
-  alert("Item remove successfully");
+  Swal.fire({
+    title: 'Success!',
+    text: "Item remove successfully",
+    icon: 'success',
+    confirmButtonText: 'OK'
+  })
 }
 
 var acc = document.getElementsByClassName("accordion");
@@ -440,3 +460,37 @@ function handleReadSearchQuery() {
   document.getElementById("search2").value = input;
   handleSearch(input);
 }
+
+
+// Handle Modal
+var modal = document.querySelector(".modal");
+var closeButton = document.querySelector(".close-button");
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+function triggerModal() {
+  toggleModal();
+}
+
+
+
+window.addEventListener("scroll",()=>{
+  let header = document.getElementById("header-2");
+  let tag = document.getElementsByClassName("tag");
+  if(window.pageYOffset > header.offsetTop){
+    header.classList.add("sticky");
+    tag[0].style.display = "none";
+    tag[1].style.display = "none";
+  }else{
+    header.classList.remove("sticky");
+    tag[0].style.display = "block";
+    tag[1].style.display = "block";
+  }
+})

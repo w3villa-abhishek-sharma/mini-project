@@ -78,7 +78,7 @@ const productRender = async (type="featured") => {
                       ><i class="fa-light fa-circle-dollar green"></i> Buy
                       Now</span
                     >
-                    <span
+                    <span onclick="triggerModal()"
                       ><i class="fa-solid fa-question red"></i> Question</span
                     >
                   </div>
