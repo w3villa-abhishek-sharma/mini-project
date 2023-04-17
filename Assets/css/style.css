@@ -574,6 +574,12 @@ header .header-2 ul li {
     padding: 20px;
     position: relative;
 }
+header .header-2 ul li:hover {
+    background-color: #fff;
+}
+header .header-2 ul li:hover a{
+    color: #000;
+}
 
 header .header-2 ul li a {
     text-decoration: none;
