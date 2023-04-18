@@ -75,6 +75,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
 }
+.search-icon-plus{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: blue;
+    padding: 20px;
+    border-radius: 50%;
+    z-index: 123;
+    display: none;
+}
+.search-icon-plus i{
+    font-size: 1.7rem;
+    color: #fff;
+}
 .see-more-text-btn{
     position: absolute;
     bottom: 0%;
@@ -94,6 +109,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .list-hover{
     position: relative;
+}
+.list-hover:hover .overlay{
+    position: absolute;
+    top: 100%;
+    left: -150px;
+    background-color: #0000006b;
+    width: 100vw;
+    height: 100vh;
+    z-index: 8;
 }
 .sub-list{
     flex-direction: column;
@@ -403,19 +427,25 @@ span.underline {
 
 .top-strip ul li {
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .top-strip ul li a {
     text-decoration: none;
     color: var(--secondry-text-color);
 }
+.top-strip ul li a:hover {
+    color: blue;
+}
 
 .top-strip .mid div {
     display: inline-block;
     margin: 0 10px;
+    cursor: pointer;
 }
 .top-strip .mid span {
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .phone-login {
@@ -475,11 +505,17 @@ header .header {
     padding: 35px 0;
 }
 
-header .logo .icon {
+header .logo .icon a{
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+}
+header .logo .icon a:hover{
+    color: blue;
 }
 
 header .navigations .link {
@@ -1473,6 +1509,9 @@ header .hambarger i {
 .featured-product-2 .inner-container .left-card .card .img img:hover {
     transform: scale(1.1);
 }
+.featured-product .category-cards .category-cards-inner .category-card .img:hover .search-icon-plus{
+    display: block;
+}
 
 .featured-product-2 .inner-container .left-card .card .content div {
     margin: 10px 0;
@@ -1499,6 +1538,9 @@ header .hambarger i {
     padding: 4px;
     border-radius: 10px;
     overflow: hidden;
+}
+.featured-product-2 .inner-container .right-card-container .item .img:hover .search-icon-plus {
+    display: block;
 }
 
 .featured-product-2 .inner-container .right-card-container .item .category-card {

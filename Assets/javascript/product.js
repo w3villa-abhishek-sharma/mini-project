@@ -21,6 +21,9 @@ const productRender = async (type="featured") => {
        <div class="item">
               <div class="category-card">
                 <div class="img">
+                <div class="search-icon-plus">
+                <i class="fa-regular fa-magnifying-glass-plus"></i>
+                </div>
                   <img src="${element.img}" alt="" />
                   ${
                     element.free

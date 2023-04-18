@@ -115,7 +115,7 @@ async function handleSearch(input, pageNo = 1) {
                   ><i class="fa-light fa-circle-dollar green"></i> Buy
                   Now</span
                 >
-                <span
+                <span onclick="triggerModal()"
                   ><i class="fa-solid fa-question red"></i> Question</span
                 >
               </div>
@@ -133,16 +133,6 @@ async function handleSearch(input, pageNo = 1) {
     }
     html += `</div>`;
     itemsContainer.innerHTML = html;
-    document.getElementById("what-are-people-saying").style.display = "none";
-    document.getElementById("most-viewed").style.display = "none";
-    document.getElementById("from-our-blog").style.display = "none";
-    document.getElementById("improved-gallery-module").style.display = "none";
-    document.getElementById("shop-by-brand").style.display = "none";
-    document.getElementById("featured-product-2").style.display = "none";
-    document.getElementById("featured-product").style.display = "none";
-    document.getElementById("why-from-us").style.display = "none";
-    document.getElementById("stats").style.display = "none";
-    document.getElementById("hero").style.display = "none";
   }
 }
 
@@ -181,9 +171,9 @@ async function handleAddToCart(element, listType) {
       if (cartData[i].id == element.id) {
         status = true;
         Swal.fire({
-          title: 'Success!',
+          title: 'Error!',
           text: "Already added into wishlist",
-          icon: 'success',
+          icon: 'error',
           confirmButtonText: 'OK'
         })
         break;
@@ -285,7 +275,7 @@ async function handleShowCartItem(listType) {
                     ><i class="fa-light fa-circle-dollar green"></i> Buy
                     Now</span
                   >
-                  <span
+                  <span onclick="triggerModal()"
                     ><i class="fa-solid fa-question red"></i> Question</span
                   >
                 </div>
@@ -380,7 +370,7 @@ function handleRemoveToCart(element, listType) {
                     ><i class="fa-light fa-circle-dollar green"></i> Buy
                     Now</span
                   >
-                  <span
+                  <span onclick="triggerModal()"
                     ><i class="fa-solid fa-question red"></i> Question</span
                   >
                 </div>
