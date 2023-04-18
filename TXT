@@ -1,0 +1,19 @@
+1. Navbar Hover Drop Downs
+2. Add Carousels
+3. Add Overlay Effects in Navbar hover
+4. Get the data by filter like - top categorys (Why buy from us and all same fields)
+5. Modal Add on Question of Featured Products
+6. Add Effects in Shop By Brand
+7. Bottom to Top Button Working
+8. Search field create the query in URLSearchParams
+9. Add to Wishlist Working
+10. Add to Cart Working
+11. Show Cart Item on the click of cart icon on navbar
+12. Show Wishlist on the click of wishlist icon on navbar
+13. Remove from the wishlist
+14. Remove from the cart
+15. Login Page Added and Login Working using Localstorage
+16. Register Page Added and Register Working using Localstorage
+17. NavBart Sticky when user Scroll the page
+18. Add all drop downs in top strip
+19. Logout add and Working

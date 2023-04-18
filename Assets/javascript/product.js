@@ -21,6 +21,9 @@ const productRender = async (type="featured") => {
        <div class="item">
               <div class="category-card">
                 <div class="img">
+                <div class="search-icon-plus">
+                <i class="fa-regular fa-magnifying-glass-plus"></i>
+                </div>
                   <img src="${element.img}" alt="" />
                   ${
                     element.free
@@ -78,7 +81,7 @@ const productRender = async (type="featured") => {
                       ><i class="fa-light fa-circle-dollar green"></i> Buy
                       Now</span
                     >
-                    <span
+                    <span onclick="triggerModal()"
                       ><i class="fa-solid fa-question red"></i> Question</span
                     >
                   </div>

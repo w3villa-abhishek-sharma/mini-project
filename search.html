@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce | Searching</title>
 
+    <!-- Sweett Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Link Icons -->
     <link
       rel="stylesheet"
@@ -80,7 +83,7 @@
           <!-- Show Laptop View -->
           <ul>
             <li>
-              <a href="#"><i class="fa-regular fa-house"></i> Home</a>
+              <a href="/"><i class="fa-regular fa-house"></i> Home</a>
             </li>
             <li>
               <a href="#"
@@ -90,22 +93,49 @@
             <li>
               <a href="#"><i class="fa-regular fa-envelope"></i> Contact</a>
             </li>
-            <li>
+            <li class="list-hover">
               <a href="#"
                 ><i class="fa-solid fa-question"></i> FAQ
                 <i class="fa-solid fa-angle-down"></i
               ></a>
+              <ul class="sub-list">
+                <li><i class="fa-solid fa-arrow-right"></i> Create</li>
+                <li><i class="fa-sharp fa-regular fa-gem"></i> Unlimited</li>
+                <li><i class="fa-regular fa-mars-double"></i> Menus</li>
+              </ul>
             </li>
           </ul>
           <div class="mid">
-            <span> English <i class="fa-solid fa-angle-down"></i> </span>
-            <span>
+            <div class="list-hover">
+              🇬🇧 English
+              <i class="fa-solid fa-angle-down">
+                <ul class="sub-list">
+                  <li>🇬🇧 English</li>
+                  <li>🇮🇳 Hindi</li>
+                  <li>🇷🇺 Russia</li>
+                </ul>
+              </i>
+            </div>
+            <div class="list-hover">
               <i class="fa-solid fa-dollar-sign"></i> US Dollar
               <i class="fa-solid fa-angle-down"></i>
-            </span>
+              <ul class="sub-list">
+                <li>$ Dollar</li>
+                <li>₹ Ruppes</li>
+                <li>€ Euro</li>
+              </ul>
+            </div>
           </div>
           <div class="mid right">
-            <span> <i class="fa-regular fa-user-vneck"></i> More Menus </span>
+            <div class="list-hover">
+              <i class="fa-regular fa-user-vneck"></i> More Menus
+              <i class="fa-solid fa-angle-down"></i>
+              <ul class="sub-list">
+                <li>Best Menu</li>
+                <li>Every Find</li>
+                <li>Nothing</li>
+              </ul>
+            </div>
             <span> <i class="fa-solid fa-truck"></i> Delivery </span>
           </div>
         </div>
@@ -118,7 +148,7 @@
         <div class="container">
           <div class="header">
             <div class="logo">
-              <div class="icon">Journal</div>
+              <div class="icon"><a href="/">Journal</a></div>
             </div>
             <div class="search">
               <div class="custom-select">
@@ -175,20 +205,348 @@
         </div>
       </div>
       <!-- Sub Menu -->
-      <section class="header-2">
+      <section id="header-2" class="header-2">
         <div class="container">
           <div class="sub-menu">
             <ul>
-              <li>
+              <li class="list-hover">
                 <div class="tag">SALE</div>
+                <div class="overlay"></div>
                 <a href="#"><i class="fa-solid fa-bars"></i> ALL DEPARTMENTS</a>
+                <ul class="sub-list-navbar">
+                  <li class="list-hover list-hover-1">
+                    <span
+                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; Shop by
+                      Category</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                    <div class="sub-list-navbar-2">
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Fashion</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Fashion</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Fashion</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Fashion</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Fashion</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Fashion</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="display: flex; align-items: flex-end">
+                        <img
+                          style="width: 100%"
+                          src="https://www.journal-theme.com/1/image/cache/catalog/journal3/misc/menu2-252x312.png"
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-hover list-hover-2">
+                    <span
+                      ><i class="fa-brands fa-apple"></i> &nbsp; Shop by
+                      Brand</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                    <div class="sub-list-navbar-2">
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Brand</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Brand</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Brand</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Brand</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Brand</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Brand</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="display: flex; align-items: flex-end">
+                        <img
+                          style="width: 100%"
+                          src="https://www.journal-theme.com/1/image/cache/catalog/journal3/misc/menu2-252x312.png"
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-hover list-hover-3">
+                    <span
+                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; Special
+                      Deals</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                    <div class="sub-list-navbar-2">
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Deals</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Deals</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Deals</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Deals</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="colum">
+                        <div class="row">
+                          <h2>Deals</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>T-Shirt</div>
+                            <div>Sell all products</div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>Deals</h2>
+                          <div>
+                            <div>Accesories</div>
+                            <div>Dress</div>
+                            <div>Pents</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-solid fa-crown"></i> &nbsp; Best
+                      Sellers</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-solid fa-circle-star"></i> &nbsp; Custom
+                      Link</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-solid fa-store"></i> &nbsp; See All
+                      Product</span
+                    >
+                  </li>
+                </ul>
               </li>
-              <li><a href="#">MULTILEVEL</a></li>
-              <li>
+              <li class="list-hover">
+                <a href="#">MULTILEVEL</a>
+                <ul class="sub-list-navbar">
+                  <li>
+                    <span
+                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; Option
+                      1</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-brands fa-apple"></i> &nbsp; Option 2</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; Option
+                      3</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-solid fa-crown"></i> &nbsp; Option 4</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-hover">
                 <div class="tag new">NEW</div>
                 <a href="#">MEGA MENU</a>
+                <ul class="sub-list-navbar">
+                  <li>
+                    <span
+                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; Menu
+                      1</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span><i class="fa-brands fa-apple"></i> &nbsp; Menu 2</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; Menu
+                      3</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-crown"></i> &nbsp; Menu 4</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                </ul>
               </li>
-              <li><a href="#">FULLWIDTH</a></li>
+              <li class="list-hover">
+                <a href="#">FULLWIDTH</a>
+                <ul class="sub-list-navbar">
+                  <li>
+                    <span
+                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; ITEM
+                      1</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span><i class="fa-brands fa-apple"></i> &nbsp; ITEM 2</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span
+                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; ITEM
+                      3</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-crown"></i> &nbsp; ITEM 4</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                </ul>
+              </li>
             </ul>
             <div class="right">
               <span><i class="fa-solid fa-phone"></i> 1800-555-666</span>
@@ -649,6 +1007,56 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <div class="question-heading">
+          Ask a Question About This Product
+          <span></span>
+        </div>
+        <div class="question-form">
+          <form action="">
+            <div class="form-group">
+              <label for="name"
+                >Your Name<span style="color: #ff0000">*</span></label
+              >
+              <input type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+              <label for="email"
+                >Your Email<span style="color: #ff0000">*</span></label
+              >
+              <input type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+              <label for="question-select">
+                Question Type<span style="color: #ff0000">*</span>
+              </label>
+              <select name="question-select" id="question-select">
+                <option value="">Select a question type</option>
+                <option value="">General</option>
+                <option value="">Product</option>
+                <option value="">Order</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="question"
+                >Your Question<span style="color: #ff0000">*</span></label
+              >
+              <textarea
+                name=""
+                id="question"
+                rows="10"
+                placeholder="Enter your question"
+              ></textarea>
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Custom JavaScript -->
     <script>
       function ActiveClass(element) {
@@ -675,13 +1083,18 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="./Assets/javascript/product.js"></script>
+    <script>
+      // Fetch Data from File
+      const fetchData = async (fileName) => {
+        // const response = await fetch(`https://w3villa-abhishek-sharma.github.io/mini-project/Assets/data/${fileName}`);
+        const response = await fetch(`./Assets/data/${fileName}`);
+        const data = await response.json();
+        return data;
+      };
+    </script>
+
     <script src="./Assets/javascript/script.js"></script>
-    <script src="./Assets/javascript/blog.js"></script>
-    <script src="./Assets/javascript/fashion.js"></script>
     <script src="./Assets/javascript/mostViewed.js"></script>
-    <script src="./Assets/javascript/peopleComment.js"></script>
-    <script src="./Assets/javascript/category.js"></script>
 
     <!-- Custom OWl Jquery -->
     <script>
