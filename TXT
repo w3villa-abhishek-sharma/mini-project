@@ -1,12 +1,8 @@
-1. Searching Work and also Searching page open from home page search
-2. Filter Close Open Buttons 
-3. Add Overlay Effects in Navbar hover
-4. Modal Add on Question of Products
-5. Bottom to Top Button Working
-6. List View and Cart View Changable by user
-7. Add to Wishlist Working
-8. Add to Cart Working
-9. Show Cart Item on the click of cart icon on navbar
-10. Show Wishlist on the click of wishlist icon on navbar
-11. Remove from the wishlist
-12. Remove from the cart
+1. Specifice Item Details Show in this page dynamically , this page open when user search item in search page and click on particular item
+2. All Tabs are dynamic (Description, specification, review,custom tab)
+3. Add See more ,see less button
+4. Image change when user click other images
+5. Zoom In and Zoom out functionality when user hover on preview iamge
+6. Add to Wishlist Working
+7. Add to Cart Working
+8. Modal open when user click on Question Icon
