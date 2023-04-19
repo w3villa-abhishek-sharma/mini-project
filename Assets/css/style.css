@@ -34,6 +34,9 @@ img {
 /* 
 +++++++++++++ Comman Class +++++++++++
 */
+.cursor-pointer{
+    cursor: pointer;
+}
 .fa-star-of-life{
     color: red;
     font-size: .6rem !important;
@@ -100,6 +103,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 8px 15px;
     border-radius: 4px;
   -webkit-text-fill-color: #fff;
+  cursor: pointer;
 }
 .sticky{
     position: fixed;
@@ -244,7 +248,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 .container {
-    width: 85vw;
+    width: 1440px;
     margin: auto;
 }
 

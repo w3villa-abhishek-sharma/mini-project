@@ -1,5 +1,13 @@
 /* 
 ++++++++++++++++++
+Comman class
+++++++++++++++++++
+*/
+
+
+
+/* 
+++++++++++++++++++
 Main Container
 ++++++++++++++++++
 */
@@ -32,6 +40,7 @@ Left Part Images
     background-color: #fff;
     border: 1px solid rgb(220, 220, 220);
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .details-page-container .left-section .left-all-imgs .left-img img {
@@ -49,12 +58,38 @@ Left Part Images
     background-color: #fff;
     border: 1px solid rgb(220, 220, 220);
     border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
+
 
 .details-page-container .left-section .selected-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    z-index: 3;
+    position: absolute;
+}
+
+.details-page-container .left-section .selected-img #preview {
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* background-repeat: no-repeat; */
+}
+
+.details-page-container .left-section .selected-img img:hover {
+    transform: scale(1.2);
+    cursor: zoom-in;
+    border: 0;
+    -moz-box-shadow: 2px 2px 7px 2px rgba(130, 130, 130, 1), -1px -1px 7px 2px rgba(130, 130, 130, 1);
+    -webkit-box-shadow: 2px 2px 7px 2px rgba(130, 130, 130, .7), -1px -1px 7px 2px rgba(130, 130, 130, 1);
+    box-shadow: 2px 2px 7px 2px rgba(130, 130, 130, .7), -2px -2px 7px 2px rgba(130, 130, 130, 1);
 }
 
 @media screen and (max-width:1080px) {
@@ -114,6 +149,7 @@ Right Part Style
     opacity: .7;
     text-transform: uppercase;
     padding: 8px 0;
+    cursor: pointer;
 }
 
 .details-page-container .right-section .right-top-navigation .product-category-filters.active {
@@ -129,8 +165,8 @@ Right Part Style
     padding-bottom: 40px;
     position: relative;
     background: -webkit-linear-gradient(#333, grey);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .details-page-container .right-section .right-top-navigation div {
