@@ -68,7 +68,7 @@
     <link rel="stylesheet" href="./Assets/css/search.css" />
     <link rel="stylesheet" href="./Assets/css/detail.css" />
   </head>
-  <body>
+  <body onload="handleReadDetailsQuery()">
     <!-- Top Strip - Laptop View -->
     <section class="top-strip-main-container">
       <div class="container">
@@ -162,7 +162,7 @@
               <input id="search" type="text" placeholder="Search here....." />
               <i
                 onclick="handleSearchQuery()"
-                class="search-icon fa-solid fa-magnifying-glass"
+                class="cursor-pointer search-icon fa-solid fa-magnifying-glass"
               ></i>
             </div>
             <div class="navigations">
@@ -448,7 +448,6 @@
                           </div>
                         </div>
                       </div>
-                      
                     </div>
                   </li>
                   <li>
@@ -476,7 +475,8 @@
                 <ul class="sub-list-navbar">
                   <li>
                     <span
-                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; Option 1</span
+                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; Option
+                      1</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
                   <li>
@@ -486,7 +486,8 @@
                   </li>
                   <li>
                     <span
-                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; Option 3</span
+                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; Option
+                      3</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
                   <li>
@@ -502,49 +503,51 @@
                 <ul class="sub-list-navbar">
                   <li>
                     <span
-                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; Menu 1</span
+                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; Menu
+                      1</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span><i class="fa-brands fa-apple"></i> &nbsp; Menu 2</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
                   <li>
                     <span
-                      ><i class="fa-brands fa-apple"></i> &nbsp; Menu 2</span
+                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; Menu
+                      3</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
                   <li>
-                    <span
-                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; Menu 3</span
-                    ><span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                  <li>
-                    <span
-                      ><i class="fa-solid fa-crown"></i> &nbsp; Menu 4</span
+                    <span><i class="fa-solid fa-crown"></i> &nbsp; Menu 4</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
                 </ul>
               </li>
-              <li class="list-hover"><a href="#">FULLWIDTH</a>
+              <li class="list-hover">
+                <a href="#">FULLWIDTH</a>
                 <ul class="sub-list-navbar">
                   <li>
                     <span
-                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; ITEM 1</span
+                      ><i class="fa-sharp fa-solid fa-bars"></i> &nbsp; ITEM
+                      1</span
+                    ><span><i class="fa-solid fa-angle-right"></i></span>
+                  </li>
+                  <li>
+                    <span><i class="fa-brands fa-apple"></i> &nbsp; ITEM 2</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
                   <li>
                     <span
-                      ><i class="fa-brands fa-apple"></i> &nbsp; ITEM 2</span
+                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; ITEM
+                      3</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
                   <li>
-                    <span
-                      ><i class="fa-solid fa-badge-dollar"></i> &nbsp; ITEM 3</span
+                    <span><i class="fa-solid fa-crown"></i> &nbsp; ITEM 4</span
                     ><span><i class="fa-solid fa-angle-right"></i></span>
                   </li>
-                  <li>
-                    <span
-                      ><i class="fa-solid fa-crown"></i> &nbsp; ITEM 4</span
-                    ><span><i class="fa-solid fa-angle-right"></i></span>
-                  </li>
-                </ul></li>
+                </ul>
+              </li>
             </ul>
             <div class="right">
               <span><i class="fa-solid fa-phone"></i> 1800-555-666</span>
@@ -560,23 +563,21 @@
       <i class="fa-regular fa-house"></i>&nbsp;
       <i class="fa-solid fa-arrow-right"></i> &nbsp; Search
       <i class="fa-solid fa-arrow-right"></i> &nbsp;
-      <span id="product-name">Apple</span>
+      <span id="product-name"></span>
     </section>
 
     <section class="search-main">
       <div class="heading1">
-        <div class="container">
-          Search - <span id="search-value">Apple</span>
-        </div>
+        <div class="container">Search - <span id="search-value"></span></div>
       </div>
 
       <div class="container">
         <div class="details-page-container">
           <div class="left-section">
             <div class="left-all-imgs">
-              <div class="left-img">
+              <div class="left-img" id="first-img">
                 <img
-                onclick="openImage(this)"
+                  onclick="openImage(this)"
                   src="https://m.media-amazon.com/images/I/71VR6c3j2bL._SL1500_.jpg"
                   alt=""
                   srcset=""
@@ -584,7 +585,7 @@
               </div>
               <div class="left-img">
                 <img
-                onclick="openImage(this)"
+                  onclick="openImage(this)"
                   src="https://ae01.alicdn.com/kf/S24c9adecba0c4499ab5d4b1eae89c9d0g/Fone-Bluetooth-Earphones-Wireless-Headphones-Magnetic-Sport-Neckband-Neck-hanging-TWS-Earbuds-Wireless-Blutooth-Headset-with.jpg_640x640.jpg"
                   alt=""
                   srcset=""
@@ -592,7 +593,7 @@
               </div>
               <div class="left-img">
                 <img
-                onclick="openImage(this)"
+                  onclick="openImage(this)"
                   src="https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg"
                   alt=""
                   srcset=""
@@ -600,7 +601,7 @@
               </div>
               <div class="left-img">
                 <img
-                    onclick="openImage(this)"
+                  onclick="openImage(this)"
                   src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
                   alt=""
                   srcset=""
@@ -609,26 +610,59 @@
             </div>
             <div id="active-img" class="selected-img">
               <img
+                id="zoom1"
+                onmousemove="zoomIn(this)"
+                onmouseout="zoomOut(this)"
                 src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
                 alt=""
                 srcset=""
               />
+              <div id="preview"></div>
             </div>
           </div>
           <div class="right-section">
             <div class="right-top-navigation">
-              <div onclick="ActiveClass(this) + changeContent('1')" class="product-category-filters active">Description</div>
-              <div  onclick="ActiveClass(this) + changeContent('2')" class="product-category-filters">Specification</div>
-              <div onclick="ActiveClass(this) + changeContent('3')" class="product-category-filters">Review</div>
-              <div onclick="ActiveClass(this)  + changeContent('4')"  class="product-category-filters">Custom tabs</div>
+              <div
+                onclick="ActiveClass(this) + changeContent('1')"
+                class="product-category-filters active"
+              >
+                Description
+              </div>
+              <div
+                onclick="ActiveClass(this) + changeContent('2')"
+                class="product-category-filters"
+              >
+                Specification
+              </div>
+              <div
+                onclick="ActiveClass(this) + changeContent('3')"
+                class="product-category-filters"
+              >
+                Review
+              </div>
+              <div
+                onclick="ActiveClass(this)  + changeContent('4')"
+                class="product-category-filters"
+              >
+                Custom tabs
+              </div>
             </div>
             <div id="product-description" class="product-description">
-                vitae aspernatur nemo cupiditate saepe perferendis recusandae beatae. Iure numquam sint amet dolores quo iste maxime ducimus blanditiis magnam hic repellendus corrupti, vitae aspernatur nemo cupiditate saepe perferendis recusandae beatae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur autem facilis cupiditate temporibus at nesciunt consectetur mollitia neque asperiores!
-              <div onclick="handleSeeMoreText()" id="see-more-text-btn" class="see-more-text-btn">
+              vitae aspernatur nemo cupiditate saepe perferendis recusandae
+              beatae. Iure numquam sint amet dolores quo iste maxime ducimus
+              blanditiis magnam hic repellendus corrupti, vitae aspernatur nemo
+              cupiditate saepe perferendis recusandae beatae.Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Consequatur autem facilis
+              cupiditate temporibus at nesciunt consectetur mollitia neque
+              asperiores!
+              <div
+                onclick="handleSeeMoreText()"
+                id="see-more-text-btn"
+                class="see-more-text-btn"
+              >
                 <i class="fa-regular fa-angle-down"></i> See more
               </div>
             </div>
-
 
             <div class="product-reviews">
               <div class="rating-icons">
@@ -645,9 +679,9 @@
             <div class="main-details">
               <div class="main-details-left">
                 <div>
-                  <strike>$ 78.46</strike>
+                  <strike id="off-price">$ 78.46</strike>
                 </div>
-                <div class="price">$ 70.61</div>
+                <div id="price" class="price">$ 70.61</div>
                 <div class="extra-detail">
                   <div>Ex Tax: <span>$ 70.61</span></div>
                   <div>Price in reward points: <span>400</span></div>
@@ -669,13 +703,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="product-company-logo">
+              <div id="product-company-logo" class="product-company-logo">
                 <img
                   src="https://rukminim1.flixcart.com/image/416/416/kzllrbk0/smartwatch/e/x/g/42-android-ios-t55-smartwatch-dme-yes-original-imagbkuyfqfwty2z.jpeg?q=70"
                   alt=""
                   srcset=""
                 />
-                <span>Apple</span>
+                <span id="company-name"></span>
               </div>
             </div>
 
@@ -784,17 +818,26 @@
                   </div>
                 </div>
               </div>
-              <button class="cart-button">
+              <button
+                onclick="handleAlert('Cart')"
+                class="cart-button cursor-pointer"
+              >
                 <i class="fa-solid fa-cart-shopping"></i> Add To Cart
               </button>
-              <button class="buy-button">
+              <button class="buy-button cursor-pointer">
                 <i class="fa-regular fa-circle-dollar"></i> Buy now
               </button>
-              <button class="question-button">
+              <button
+                class="question-button cursor-pointer"
+                onclick="triggerModal()"
+              >
                 <i class="fa-regular fa-circle-question"></i>
               </button>
             </div>
-            <div class="wishlist-compare">
+            <div
+              class="wishlist-compare cursor-pointer"
+              onclick="handleAlert('Wishlist')"
+            >
               <i style="color: red" class="fa-regular fa-heart"></i>
               <span>Add to Wishlist</span>
               <i style="color: blue" class="fa-solid fa-code-compare"></i>
@@ -804,7 +847,7 @@
               <i class="fa-sharp fa-solid fa-circle-info"></i> This product has
               a minimum quantity of 2
             </div>
-            <div class="social-space">
+            <div class="social-space cursor-pointer">
               <div><i class="fa-brands fa-facebook-f"></i></div>
               <div><i class="fa-brands fa-twitter"></i></div>
               <div><i class="fa-brands fa-pinterest-p"></i></div>
@@ -1000,7 +1043,6 @@
       </div>
     </footer>
 
-
     <!-- Modal -->
     <div class="modal">
       <div class="modal-content">
@@ -1053,13 +1095,13 @@
 
     <!-- Custom JavaScript -->
     <script>
-        function ActiveClass(element) {
-          for (const child of element.parentNode.children) {
-            child.classList.remove("active");
-          }
-          element.classList.add("active");
+      function ActiveClass(element) {
+        for (const child of element.parentNode.children) {
+          child.classList.remove("active");
         }
-      </script>
+        element.classList.add("active");
+      }
+    </script>
 
     <!-- JQuery JavaScript -->
     <script
@@ -1076,8 +1118,33 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+      function zoomIn(event) {
+        var pre = document.getElementById("preview");
+        pre.style.visibility = "visible";
+        if ($("#zoom1").is(":hover")) {
+          var img = document.getElementById("zoom1");
+          pre.style.backgroundImage =
+            `url('${img.src}')`;
+            img.style.opacity = 0;
+        }
+        var posX = event.offsetX;
+        var posY = event.offsetY;
+        pre.style.backgroundPosition = -posX * 2.5 + "px " + -posY * 2.5 + "px";
+      }
+
+      function zoomOut() {
+        var pre = document.getElementById("preview");
+        var img = document.getElementById("zoom1");
+        pre.style.backgroundImage = "";
+        img.style.opacity = 1;
+      }
+    </script>
+
     <script src="./Assets/javascript/details.js"></script>
     <script src="./Assets/javascript/product.js"></script>
     <script src="./Assets/javascript/mostViewed.js"></script>
+    <script src="./Assets/javascript/script.js"></script>
   </body>
 </html>

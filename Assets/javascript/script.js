@@ -57,7 +57,9 @@ async function handleSearch(input, pageNo = 1) {
     filterData
       .slice(chunk * (pageNo - 1), chunk * pageNo)
       .forEach((element) => {
-        html += `<div class="category-card">
+        html += `<div onclick="handleDetailQuery('${
+          element.id
+        }')" class="category-card">
             <div class="img">
               <img src="${element.img}" alt="" />
               ${
@@ -134,6 +136,12 @@ async function handleSearch(input, pageNo = 1) {
     html += `</div>`;
     itemsContainer.innerHTML = html;
   }
+  if (!filterData.length) {
+    html = `<div style="color: grey;
+    width: 100%;
+    margin: 30px;"> No Result found </div>`;
+    itemsContainer.innerHTML = html;
+  }
 }
 
 // Handle Add to Cart
@@ -160,22 +168,22 @@ async function handleAddToCart(element, listType) {
       });
       cartData.push(data[0]);
       Swal.fire({
-        title: 'Success!',
+        title: "Success!",
         text: "Item added successfully",
-        icon: 'success',
-        confirmButtonText: 'OK'
-      })
+        icon: "success",
+        confirmButtonText: "OK",
+      });
     }
   } else {
     for (let i = 0; i < cartData.length; i++) {
       if (cartData[i].id == element.id) {
         status = true;
         Swal.fire({
-          title: 'Error!',
+          title: "Error!",
           text: "Already added into wishlist",
-          icon: 'error',
-          confirmButtonText: 'OK'
-        })
+          icon: "error",
+          confirmButtonText: "OK",
+        });
         break;
       }
     }
@@ -187,11 +195,11 @@ async function handleAddToCart(element, listType) {
       });
       cartData.push(data[0]);
       Swal.fire({
-        title: 'Success!',
+        title: "Success!",
         text: "Item added successfully",
-        icon: 'success',
-        confirmButtonText: 'OK'
-      })
+        icon: "success",
+        confirmButtonText: "OK",
+      });
     }
   }
   localStorage.setItem(listType, JSON.stringify(cartData));
@@ -386,11 +394,11 @@ function handleRemoveToCart(element, listType) {
     ).innerText = `${itemCount} items(s) - $${totalAmount}.00`;
   }
   Swal.fire({
-    title: 'Success!',
+    title: "Success!",
     text: "Item remove successfully",
-    icon: 'success',
-    confirmButtonText: 'OK'
-  })
+    icon: "success",
+    confirmButtonText: "OK",
+  });
 }
 
 var acc = document.getElementsByClassName("accordion");
@@ -440,6 +448,11 @@ function handleSearchQuery() {
   let searchInput = document.getElementById("search").value;
   window.location = `./search.html?search=${searchInput}`;
 }
+// Handle Query search
+function handleSearchQuery2() {
+  let searchInput = document.getElementById("search2").value;
+  window.location = `./search.html?search=${searchInput}`;
+}
 
 // Handle Read Search Query
 function handleReadSearchQuery() {
@@ -451,6 +464,67 @@ function handleReadSearchQuery() {
   handleSearch(input);
 }
 
+// Handle Query search
+function handleDetailQuery(id) {
+  window.location = `./details.html?search=${id}`;
+}
+
+// Handle Read Search Query
+function handleReadDetailsQuery() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const input = urlParams.get("search");
+  handleDetailPageSearch(input);
+}
+
+// Handle Search
+async function handleDetailPageSearch(input) {
+  const response = await fetchData("items.json");
+  if (input) {
+    filterData = response.product.filter((element) => {
+      if (element.id == input) {
+        return element;
+      }
+    });
+
+    document.getElementById("product-name").innerHTML = filterData[0].name;
+    document.getElementById("search-value").innerHTML = filterData[0].name;
+    document.getElementById("product-description").innerHTML =
+      filterData[0].decription;
+    document.getElementById("product-company-logo").innerHTML = `<img
+  src="${filterData[0].img}"
+  alt=""
+  srcset=""
+/>
+<span id="company-name">${filterData[0].name}</span>`;
+    document.getElementById("off-price").innerHTML = "$" + filterData[0].off;
+    document.getElementById("first-img").innerHTML = `<img
+  onclick="openImage(this)"
+    src="${filterData[0].img}"
+    alt=""
+    srcset=""
+  />`;
+    document.getElementById("active-img").innerHTML = `<img
+    id="zoom1"
+    onmousemove="zoomIn(event)"
+    onmouseout="zoomOut()"
+    onclick="openImage(this)"
+    src="${filterData[0].img}"
+    alt=""
+    srcset=""
+  /><div id="preview"></div>`;
+    document.getElementById("price").innerHTML = "$" + filterData[0]?.price;
+  }
+}
+
+// Handle Alert
+const handleAlert = (name) => {
+  Swal.fire({
+    title: "Success!",
+    text: `Item add into ${name} successfully`,
+    icon: "success",
+    confirmButtonText: "OK",
+  });
+};
 
 // Handle Modal
 var modal = document.querySelector(".modal");
@@ -469,18 +543,16 @@ function triggerModal() {
   toggleModal();
 }
 
-
-
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
   let header = document.getElementById("header-2");
   let tag = document.getElementsByClassName("tag");
-  if(window.pageYOffset > header.offsetTop){
+  if (window.pageYOffset > header.offsetTop) {
     header.classList.add("sticky");
     tag[0].style.display = "none";
     tag[1].style.display = "none";
-  }else{
+  } else {
     header.classList.remove("sticky");
     tag[0].style.display = "block";
     tag[1].style.display = "block";
   }
-})
+});

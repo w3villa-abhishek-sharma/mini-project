@@ -32,11 +32,14 @@ function changeContent(name){
 function openImage(el){
     let link = el.src;
     let activeImg = document.getElementById("active-img");
-    activeImg.innerHTML = `<img id="active-img"
+    activeImg.innerHTML = `<img
+    id="zoom1"
+    onmousemove="zoomIn(event)"
+    onmouseout="zoomOut()"
     src="${link}"
     alt=""
     srcset=""
-  />`
+  /><div id="preview"></div>`
 }
 
 // Handle See more Text
